@@ -1,0 +1,25 @@
+@startuml parts
+@startmindmap parts
++ fragment
+++ general
++++ metadata
++++ historical events
++++ note:history
++++ links
++++ ext bibliography
++++ decorated counts
++++ physical measurements
++++ chronotopes
++++ physical states
+++ codicology
++++ contents?
++++ hands
++++ edits
++++ shelfmarks
+-- NEW
+--- fragment support
+--- quire labels
+--- decorations
+--- rulings
+@endmindmap
+@enduml

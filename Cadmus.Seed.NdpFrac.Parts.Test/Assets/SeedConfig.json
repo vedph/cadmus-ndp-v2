@@ -1,0 +1,49 @@
+{
+  "facets": [
+    {
+      "typeId": "it.vedph.ndp.cod-fr-quire-labels",
+      "name": "quire labels",
+      "description": "Quire labels.",
+      "colorKey": "31AB54",
+      "groupKey": "fragments",
+      "sortKey": "a"
+    },
+    {
+      "typeId": "it.vedph.ndp.cod-fr-rulings",
+      "name": "rulings",
+      "description": "Rulings.",
+      "colorKey": "31AB54",
+      "groupKey": "fragments",
+      "sortKey": "b"
+    },
+    {
+      "typeId": "it.vedph.ndp.cod-fr-support",
+      "name": "support",
+      "description": "Support.",
+      "colorKey": "31AB54",
+      "groupKey": "fragments",
+      "sortKey": "c"
+    }
+  ],
+  "seed": {
+    "options": {
+      "seed": 1,
+      "baseTextPartTypeId": "it.vedph.token-text",
+      "users": [ "zeus" ],
+      "partRoles": [],
+      "fragmentRoles": []
+    },
+    "partSeeders": [
+      {
+        "id": "seed.it.vedph.ndp.cod-fr-quire-labels"
+      },
+      {
+        "id": "seed.it.vedph.ndp.cod-fr-rulings"
+      },
+      {
+        "id": "seed.it.vedph.ndp.cod-fr-support"
+      }
+    ],
+    "fragmentSeeders": []
+  }
+}

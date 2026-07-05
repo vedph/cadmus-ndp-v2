@@ -1,0 +1,28 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="buildnpub.ps1" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+    <File Path="docker-compose.yml" />
+    <File Path="Dockerfile" />
+    <File Path="getbuildorder.ps1" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="Cadmus.Ndp.Parts.Test/Cadmus.Ndp.Parts.Test.csproj" />
+  <Project Path="Cadmus.Ndp.Parts/Cadmus.Ndp.Parts.csproj" />
+  <Project Path="Cadmus.NdpBooks.Parts.Test/Cadmus.NdpBooks.Parts.Test.csproj" />
+  <Project Path="Cadmus.NdpBooks.Parts/Cadmus.NdpBooks.Parts.csproj" />
+  <Project Path="Cadmus.NdpDrawings.Parts.Test/Cadmus.NdpDrawings.Parts.Test.csproj" />
+  <Project Path="Cadmus.NdpDrawings.Parts/Cadmus.NdpDrawings.Parts.csproj" />
+  <Project Path="Cadmus.NdpFrac.Parts.Test/Cadmus.NdpFrac.Parts.Test.csproj" />
+  <Project Path="Cadmus.NdpFrac.Parts/Cadmus.NdpFrac.Parts.csproj" />
+  <Project Path="Cadmus.Seed.Ndp.Parts.Test/Cadmus.Seed.Ndp.Parts.Test.csproj" />
+  <Project Path="Cadmus.Seed.Ndp.Parts/Cadmus.Seed.Ndp.Parts.csproj" />
+  <Project Path="Cadmus.Seed.NdpBooks.Parts.Test/Cadmus.Seed.NdpBooks.Parts.Test.csproj" />
+  <Project Path="Cadmus.Seed.NdpBooks.Parts/Cadmus.Seed.NdpBooks.Parts.csproj" />
+  <Project Path="Cadmus.Seed.NdpDrawings.Parts.Test/Cadmus.Seed.NdpDrawings.Parts.Test.csproj" />
+  <Project Path="Cadmus.Seed.NdpDrawings.Parts/Cadmus.Seed.NdpDrawings.Parts.csproj" />
+  <Project Path="Cadmus.Seed.NdpFrac.Parts.Test/Cadmus.Seed.NdpFrac.Parts.Test.csproj" />
+  <Project Path="Cadmus.Seed.NdpFrac.Parts/Cadmus.Seed.NdpFrac.Parts.csproj" />
+  <Project Path="Cadmus.Ndp.Api/Cadmus.Ndp.Api.csproj" />
+</Solution>

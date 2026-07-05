@@ -1,0 +1,33 @@
+{
+  "facets": [
+    {
+      "typeId": "it.vedph.ndp.print-fonts",
+      "name": "fonts",
+      "description": "Printed book fonts.",
+      "colorKey": "31AB54",
+      "groupKey": "fragments",
+      "sortKey": "01"
+    }
+  ],
+  "seed": {
+    "options": {
+      "seed": 1,
+      "baseTextPartTypeId": "it.vedph.token-text",
+      "users": [ "zeus" ],
+      "partRoles": [],
+      "fragmentRoles": []
+    },
+    "partSeeders": [
+      {
+        "id": "seed.it.vedph.ndp.print-fonts"
+      },
+      {
+        "id": "seed.it.vedph.ndp.print-fig-plan-impl"
+      },
+      {
+        "id": "seed.it.vedph.ndp.print-fig-plan"
+      }
+    ],
+    "fragmentSeeders": []
+  }
+}

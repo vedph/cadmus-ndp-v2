@@ -1,0 +1,69 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<InterceptorsNamespaces>$(InterceptorsNamespaces);Microsoft.AspNetCore.OpenApi.Generated</InterceptorsNamespaces>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Cadmus.Api.Config" />
+		<PackageReference Include="Cadmus.Api.Controllers" />
+		<PackageReference Include="Cadmus.Api.Controllers.Export" />
+		<PackageReference Include="Cadmus.Api.Controllers.Import" />
+		<PackageReference Include="Cadmus.Api.Models" />
+		<PackageReference Include="Cadmus.Api.Services" />
+		<PackageReference Include="Cadmus.Codicology.Graph" />
+		<PackageReference Include="Cadmus.Codicology.Parts" />
+		<PackageReference Include="Cadmus.Epigraphy.Parts" />
+		<PackageReference Include="Cadmus.Graph.Extras" />
+		<PackageReference Include="Cadmus.Iconography.Parts" />
+		<PackageReference Include="Cadmus.Iconography.Services" />
+		<PackageReference Include="Cadmus.Refs.Bricks" />
+		<PackageReference Include="Cadmus.Seed.Codicology.Parts" />
+		<PackageReference Include="Cadmus.Seed.Epigraphy.Parts" />
+		<PackageReference Include="Cadmus.Seed.General.Parts" />
+		<PackageReference Include="Cadmus.Seed.Iconography.Parts" />
+		<PackageReference Include="Cadmus.Seed.Ndp.Parts" />
+		<PackageReference Include="Cadmus.Seed.NdpDrawings.Parts" />
+		<PackageReference Include="Cadmus.Seed.Philology.Parts" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" />
+		<PackageReference Include="Mol.Api.Controllers" />
+		<PackageReference Include="Mol.Import" />
+		<PackageReference Include="Mol.PgSql" />
+		<PackageReference Include="Mufi.Api.Controllers" />
+		<PackageReference Include="Newtonsoft.Json" />
+		<PackageReference Include="Polly" />
+		<PackageReference Include="Scalar.AspNetCore" />
+		<PackageReference Include="Serilog" />
+		<PackageReference Include="Serilog.AspNetCore" />
+		<PackageReference Include="Serilog.Exceptions" />
+		<PackageReference Include="Serilog.Extensions.Hosting" />
+		<PackageReference Include="Serilog.Sinks.Console" />
+		<PackageReference Include="Serilog.Sinks.File" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(Configuration)'=='Debug'">
+		<ProjectReference Include="..\Cadmus.Ndp.Parts\Cadmus.Ndp.Parts.csproj" />
+		<ProjectReference Include="..\Cadmus.NdpBooks.Parts\Cadmus.NdpBooks.Parts.csproj" />		
+		<ProjectReference Include="..\Cadmus.NdpDrawings.Parts\Cadmus.NdpDrawings.Parts.csproj" />
+		<ProjectReference Include="..\Cadmus.NdpFrac.Parts\Cadmus.NdpFrac.Parts.csproj" />
+		<ProjectReference Include="..\Cadmus.Seed.Ndp.Parts\Cadmus.Seed.Ndp.Parts.csproj" />
+		<ProjectReference Include="..\Cadmus.Seed.NdpBooks.Parts\Cadmus.Seed.NdpBooks.Parts.csproj" />
+		<ProjectReference Include="..\Cadmus.Seed.NdpDrawings.Parts\Cadmus.Seed.NdpDrawings.Parts.csproj" />
+		<ProjectReference Include="..\Cadmus.Seed.NdpFrac.Parts\Cadmus.Seed.NdpFrac.Parts.csproj" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(Configuration)'=='Release'">
+		<PackageReference Include="Cadmus.Ndp.Parts" />
+		<PackageReference Include="Cadmus.NdpDrawings.Parts" />
+		<PackageReference Include="Cadmus.NdpBooks.Parts" />
+		<PackageReference Include="Cadmus.NdpDrawings.Parts" />
+		<PackageReference Include="Cadmus.NdpFrac.Parts" />
+		<PackageReference Include="Cadmus.Seed.Ndp.Parts" />
+		<PackageReference Include="Cadmus.Seed.NdpBooks.Parts" />
+		<PackageReference Include="Cadmus.Seed.NdpDrawings.Parts" />
+		<PackageReference Include="Cadmus.Seed.NdpFrac.Parts" />
+	</ItemGroup>
+</Project>
