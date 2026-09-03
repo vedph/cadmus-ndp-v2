@@ -7591,6 +7591,9 @@
         }
       }
     },
+    "it.vedph.codicology.decorations": {
+      "hideArtists": true
+    },
     "it.vedph.codicology.shelfmarks": {
       "cityFromLibPattern": "\\((.+)\\)$"
     },
