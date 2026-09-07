@@ -282,3 +282,10 @@ As you can see, almost half of the models come from the generic domain, and almo
 - `note:hist` is the narrative history of the entity. Usually its most relevant events are extracted and formalized into historical events.
 - `note` is a generic note, mostly used for editorial purposes.
 - bibliography is hosted in `references` via Zotero lookup. In this, the `citation` property of each reference (a string) will hold a combination of the Zotero library ID and item ID, uniquely identifying each bibliographic entry.
+
+## Iconographic Connections
+
+- **descriptors** ("parole chiave"): to be revised. Suggested syntax is S(A) ("demonio", "veste", "bastone ricurvo"). These should ideally be the minimalist elements of a description in the most objective point of view: the "things" you see in a picture. In a resurrection scene you might see things like rock, sun, plant, shroud. How they are interpreted and connected together (usually with a "story") belongs to an higher abstraction layer, which is much more culturally denoted.
+- **subjects** ("soggetti"): to be revised. Suggested syntax is SVO ("Dante vaga nella selva", "Virgilio cavalca la groppa di Gerione", etc). This is the "story", the higher level of description which usually introduces some action with a subject and a complement, whence the suggested minimalist SVO syntax.
+- **topic** ("macrosoggetti"): use existing list after revision.
+- **context** ("temi danteschi"; e.g. "simoniaci", "spiriti magni"): use existing list after revision.
