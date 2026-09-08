@@ -264,7 +264,7 @@ As you can see, almost half of the models come from the generic domain, and almo
 
 ## Iconographic Links
 
-Since version 2, the iconography facet has been removed and everything about it has been outsourced via links to authority lists, whether they are external or internal (taxonomies or items).
+Since version 16, the iconography facet has been removed and everything about it has been outsourced via links to authority lists, whether they are external or internal (taxonomies or items).
 
 For instance, each element of a decoration in the decorations part can have links. These can target:
 
