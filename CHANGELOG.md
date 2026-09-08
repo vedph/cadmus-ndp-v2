@@ -1,5 +1,6 @@
 # History
 
+- 2026-09-08: configured TaxoStore with mock taxonomies.
 - 2026-09-03:
   - updated packages.
   - added `hideArtists` to API profile settings.

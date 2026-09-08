@@ -5,8 +5,8 @@ using Cadmus.Api.Services;
 using Cadmus.Api.Services.Seeding;
 using Cadmus.Core;
 using Cadmus.Core.Config;
+using Cadmus.Ndp.Api.Services;
 using Cadmus.Seed;
-using CadmusNdpApi.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.EntityFrameworkCore;
@@ -23,8 +23,10 @@ using System;
 using System.Diagnostics;
 using System.IO;
 using System.Threading.Tasks;
+using TaxoStore.Api.Controllers;
+using TaxoStore.Api.Controllers.Services;
 
-namespace CadmusNdpApi;
+namespace Cadmus.Ndp.Api;
 
 /// <summary>
 /// Program.
@@ -55,7 +57,6 @@ public static class Program
 
         // metadata builder factory provider
         services.AddSingleton<IItemMetadataBuilderFactoryProvider>(_ =>
-            // TODO if using this feature, replace this provider with your API app's provider
             new StandardItemMetadataBuilderFactoryProvider(
                 config.GetConnectionString("Default")!));
 
@@ -75,6 +76,25 @@ public static class Program
                 {
                     Source = Path.Combine(path, "mufi.db")
                 });
+        });
+
+        // TaxoStore
+        services.AddTaxoStoreServices(options =>
+        {
+            string? connectionString = config.GetConnectionString("TaxoStore");
+            if (string.IsNullOrEmpty(connectionString))
+            {
+                throw new InvalidOperationException(
+                    "Connection string 'TaxoStore' not found.");
+            }
+
+            options.ConnectionString = connectionString;
+
+            options.EnableAutoInitialization =
+                config.GetValue("TaxoStore:EnableAutoInitialization", true);
+
+            options.InitializationDelaySeconds =
+                config.GetValue("TaxoStore:InitializationDelaySeconds", 0);
         });
     }
 
@@ -128,6 +148,8 @@ public static class Program
                 .AddApplicationPart(typeof(ItemController).Assembly)
                 // Mol.Api.Controllers
                 .AddApplicationPart(typeof(MolController).Assembly)
+                // Taxo
+                .AddApplicationPart(typeof(TaxoTreeController).Assembly)
                 .AddControllersAsServices();
 
             WebApplication app = builder.Build();

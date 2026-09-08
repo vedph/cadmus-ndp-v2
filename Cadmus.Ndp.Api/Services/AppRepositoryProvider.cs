@@ -14,7 +14,7 @@ using Cadmus.NdpDrawings.Parts;
 using Cadmus.NdpFrac.Parts;
 using Cadmus.Philology.Parts;
 
-namespace CadmusNdpApi.Services;
+namespace Cadmus.Ndp.Api.Services;
 
 /// <summary>
 /// Application's repository provider. Usually, this is implemented in your

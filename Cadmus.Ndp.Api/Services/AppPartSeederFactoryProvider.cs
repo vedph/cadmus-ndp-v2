@@ -14,7 +14,7 @@ using Microsoft.Extensions.Hosting;
 using System;
 using System.Reflection;
 
-namespace CadmusNdpApi.Services;
+namespace Cadmus.Ndp.Api.Services;
 
 /// <summary>
 /// Application's part seeders factory provider. Usually, this is implemented
