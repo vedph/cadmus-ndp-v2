@@ -11,7 +11,7 @@ These repositories are now archived and no longer maintained. Please use this re
 - centralized codebase for all core Cadmus backend components.
 - unified versioning and release management.
 
-The projects were just copied into this solution from the above repositories, and then their configuration files were updated to use the new unified versioning (starting from 15.0.0) and release management. The code itself was not changed, so it is still the same as in the original repositories. Anyway, new development will be done here.
+The projects were copied into this solution from the above repositories and then their configuration files were updated to use the new unified versioning (starting from 15.0.0) and release management. The code itself was not changed, so it is still the same as in the original repositories. Anyway, new development is done here only.
 
 ## Docker Images
 
@@ -22,7 +22,7 @@ docker buildx create --use --name multi-arch-builder || docker buildx use multi-
 docker buildx inspect --bootstrap
 ```
 
->To run natively on Linux VMs, macOS (both Intel and Apple Silicon), and Windows (via WSL2 or Docker Desktop)—`linux/amd64` and `linux/arm64` are the only two targets we need. Note that `docker buildx` automatically injects variables like `TARGETARCH` and `TARGETOS` into the scope of your build. In `Dockerfile` we pass these directly to the .NET CLI commands.
+> To run natively on Linux VMs, macOS (both Intel and Apple Silicon), and Windows (via WSL2 or Docker Desktop)—`linux/amd64` and `linux/arm64` are the only two targets we need. Note that `docker buildx` automatically injects variables like `TARGETARCH` and `TARGETOS` into the scope of your build. In `Dockerfile` we pass these directly to the .NET CLI commands.
 
 These commands build for multiple platforms and push directly to Docker Hub:
 
@@ -40,111 +40,111 @@ The list of facets is given here with their conventional groupings used in the e
 
 - **manuscript**
   - _identity_
-    - [metadata](https://github.com/vedph/cadmus-general/blob/master/docs/metadata.md)
-    - [shelfmarks](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-shelfmarks.md) (COD)
-    - [links](https://github.com/vedph/cadmus-general/blob/master/docs/pin-links.md)
+    - [metadata](https://github.com/vedph/cadmus-general/blob/master/docs/metadata.md): generic metadata.
+    - [shelfmarks](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-shelfmarks.md) (COD): shelfmark code(s).
+    - [links](https://github.com/vedph/cadmus-general/blob/master/docs/pin-links.md): generic links.
   - _history_
-    - [chronotopes](https://github.com/vedph/cadmus-general/blob/master/docs/chronotopes.md)
-    - [historical events](https://github.com/vedph/cadmus-general/blob/master/docs/historical-events.md):`ms` 🚩
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`hist` (history) 🚩
+    - [chronotopes](https://github.com/vedph/cadmus-general/blob/master/docs/chronotopes.md): date and/or place pair(s).
+    - [historical events](https://github.com/vedph/cadmus-general/blob/master/docs/historical-events.md):`ms` 🚩 historical events for granular history. This requires a specific ontology.
+    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`hist` (history) 🚩 free text about the manuscript's history.
   - _material_
-    - [bindings](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-bindings.md) (COD)
-    - [sheet labels](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-sheet-labels.md) (COD)
-    - [material description](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-material-dsc.md) (COD)
-    - [watermarks](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-watermarks.md) (COD)
-    - [preservation states](https://github.com/vedph/cadmus-general/blob/master/docs/physical-states.md)
+    - [bindings](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-bindings.md) (COD): binding(s).
+    - [sheet labels](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-sheet-labels.md) (COD): sheet labels.
+    - [material description](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-material-dsc.md) (COD): material description.
+    - [watermarks](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-watermarks.md) (COD): watermark(s).
+    - [preservation states](https://github.com/vedph/cadmus-general/blob/master/docs/physical-states.md): material preservation state(s)..
   - _content_
-    - [contents](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-contents.md) (COD)
-    - [layouts](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-layouts.md) (COD)
-    - [decorations](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-decorations.md) (COD) 🔗 `iconography`, `person`
-    - [iconography instructions](https://github.com/vedph/cadmus-iconography/blob/master/docs/ico-instructions.md) (ICO) 🔗 `iconography`
-    - [hands](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-hands.md) (COD) 🔗 `person`
-    - [edits](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-edits.md) (COD) 🔗 `person`
-    - [text passages](https://github.com/vedph/cadmus-ndp/blob/master/docs/text-passages.md) (NDP)
+    - [contents](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-contents.md) (COD): textual contents.
+    - [layouts](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-layouts.md) (COD): layout(s).
+    - [decorations](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-decorations.md) (COD): decorations. 🔗 `person`. Each decoration element typically links to artist, topic, subject and descriptors, all from a taxonomies store.
+    - [iconography instructions](https://github.com/vedph/cadmus-iconography/blob/master/docs/ico-instructions.md) (ICO): instructions to the artist.
+    - [hands](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-hands.md) (COD): hands. 🔗 `person`
+    - [edits](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-edits.md) (COD): edits after the manuscript composition. 🔗 `person`
+    - [text passages](https://github.com/vedph/cadmus-ndp/blob/master/docs/text-passages.md) (NDP): relevant text passages.
   - _editorial_
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md)
+    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md): editorial note.
   - _references_
-    - [references](https://github.com/vedph/cadmus-general/blob/master/docs/doc-references.md) (mostly used for Zotero bibliography)
+    - [references](https://github.com/vedph/cadmus-general/blob/master/docs/doc-references.md): documental references, mostly used for Zotero bibliography.
 
 - **fragment**
   - _identity_
-    - [metadata](https://github.com/vedph/cadmus-general/blob/master/docs/metadata.md)
-    - [shelfmarks](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-shelfmarks.md) (COD)
-    - [links](https://github.com/vedph/cadmus-general/blob/master/docs/pin-links.md) 🔗 `manuscript` (+group)
+    - [metadata](https://github.com/vedph/cadmus-general/blob/master/docs/metadata.md): generic metadata.
+    - [shelfmarks](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-shelfmarks.md) (COD): shelfmark code(s) for the fragment.
+    - [links](https://github.com/vedph/cadmus-general/blob/master/docs/pin-links.md): generic links. 🔗 `manuscript` (+group): the manuscript this fragment belonged to (when available).
   - _history_
-    - [chronotopes](https://github.com/vedph/cadmus-general/blob/master/docs/chronotopes.md)
-    - [historical events](https://github.com/vedph/cadmus-general/blob/master/docs/historical-events.md):`fr` 🚩
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`hist` (history)
+    - [chronotopes](https://github.com/vedph/cadmus-general/blob/master/docs/chronotopes.md): date and/or place pair(s).
+    - [historical events](https://github.com/vedph/cadmus-general/blob/master/docs/historical-events.md):`fr` 🚩 historical events for granular history. This requires a specific ontology.
+    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`hist` (history) 🚩 free text about the manuscript's history.
   - _material_
-    - [support](https://github.com/vedph/cadmus-ndp-frac/blob/master/docs/cod-fr-support-part.md) (FRA)
-    - [rulings](https://github.com/vedph/cadmus-ndp-frac/blob/master/docs/cod-fr-rulings-part.md) (FRA)
-    - [labels](https://github.com/vedph/cadmus-ndp-frac/blob/master/docs/cod-fr-quire-labels-part.md):`catch` (FRA) 🚩 for catchwords
-    - [labels](https://github.com/vedph/cadmus-ndp-frac/blob/master/docs/cod-fr-quire-labels-part.md):`sig` (FRA) 🚩 for signatures
-    - [labels](https://github.com/vedph/cadmus-ndp-frac/blob/master/docs/cod-fr-quire-labels-part.md) (FRA) for quires
-    - [decorated counts](https://github.com/vedph/cadmus-general/blob/master/docs/decorated-counts.md):`fr` 🚩
-    - [measurements](https://github.com/vedph/cadmus-general/blob/master/docs/physical-measurements.md):`fr` 🚩
-    - [preservation states](https://github.com/vedph/cadmus-general/blob/master/docs/physical-states.md)
+    - [support](https://github.com/vedph/cadmus-ndp-frac/blob/master/docs/cod-fr-support-part.md) (FRA): material support.
+    - [rulings](https://github.com/vedph/cadmus-ndp-frac/blob/master/docs/cod-fr-rulings-part.md) (FRA): rulings.
+    - [labels](https://github.com/vedph/cadmus-ndp-frac/blob/master/docs/cod-fr-quire-labels-part.md):`catch` (FRA) 🚩 catchwords.
+    - [labels](https://github.com/vedph/cadmus-ndp-frac/blob/master/docs/cod-fr-quire-labels-part.md):`sig` (FRA) 🚩 signatures.
+    - [labels](https://github.com/vedph/cadmus-ndp-frac/blob/master/docs/cod-fr-quire-labels-part.md) (FRA): quires.
+    - [decorated counts](https://github.com/vedph/cadmus-general/blob/master/docs/decorated-counts.md):`fr` 🚩 various counts.
+    - [measurements](https://github.com/vedph/cadmus-general/blob/master/docs/physical-measurements.md):`fr` 🚩 various measurements.
+    - [preservation states](https://github.com/vedph/cadmus-general/blob/master/docs/physical-states.md): material preservation state(s).
   - _content_
-    - [contents](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-contents.md) (COD)
-    - [layout](https://github.com/vedph/cadmus-ndp-frac#codfrlayoutpart) (FRA)
-    - [decorations](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-decorations.md) (COD) 🔗 `iconography`, `person`
-    - [iconography instructions](https://github.com/vedph/cadmus-iconography/blob/master/docs/ico-instructions.md) (ICO) 🔗 `iconography`
-    - [hands](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-hands.md) (COD) 🔗 `person`
-    - [edits](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-edits.md) (COD) 🔗 `person`
-    - [text passages](https://github.com/vedph/cadmus-ndp/blob/master/docs/text-passages.md) (NDP)
+    - [contents](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-contents.md) (COD): textual contents.
+    - [layout](https://github.com/vedph/cadmus-ndp-frac#codfrlayoutpart) (FRA): layout.
+    - [decorations](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-decorations.md) (COD): decorations. 🔗 `person`. Each decoration element typically links to artist, topic, subject and descriptors, all from a taxonomies store.
+    - [iconography instructions](https://github.com/vedph/cadmus-iconography/blob/master/docs/ico-instructions.md) (ICO): instructions to the artist.
+    - [hands](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-hands.md) (COD): hands. 🔗 `person`
+    - [edits](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-edits.md) (COD): edits after the manuscript composition. 🔗 `person`
+    - [text passages](https://github.com/vedph/cadmus-ndp/blob/master/docs/text-passages.md) (NDP): relevant text passages.
   - _editorial_
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md)
+    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md): editorial note.
   - references
-    - [references](https://github.com/vedph/cadmus-general/blob/master/docs/doc-references.md)
+    - [references](https://github.com/vedph/cadmus-general/blob/master/docs/doc-references.md): documental references, mostly used for Zotero bibliography.
 
 - **print edition**
   - _identity_
-    - [metadata](https://github.com/vedph/cadmus-general/blob/master/docs/metadata.md)
+    - [metadata](https://github.com/vedph/cadmus-general/blob/master/docs/metadata.md): generic metadata.
     - [links](https://github.com/vedph/cadmus-general/blob/master/docs/pin-links.md) (this can include also authors and editors) 🔗 `person`
   - _history_
-    - [chronotopes](https://github.com/vedph/cadmus-general/blob/master/docs/chronotopes.md):`prn` 🚩 (print date/place)
-    - [chronotopes](https://github.com/vedph/cadmus-general/blob/master/docs/chronotopes.md):`pub` 🚩 (publication date/place)
+    - [chronotopes](https://github.com/vedph/cadmus-general/blob/master/docs/chronotopes.md):`prn`  🚩 print date and/or place pair(s).
+    - [chronotopes](https://github.com/vedph/cadmus-general/blob/master/docs/chronotopes.md):`pub` 🚩 publication date and/or place pair(s).
   - _content_
-    - [fonts](https://github.com/vedph/cadmus-ndp-books/blob/master/docs/print-fonts-part.md) (BOK)
-    - [layouts](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-layouts.md):`prn` 🚩 (COD)
-    - [watermarks](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-watermarks.md) (COD)
-    - [figurative plan](https://github.com/vedph/cadmus-ndp-books/blob/master/docs/figurative-plan-part.md) (BOK) 🔗 `person`
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`inc` 🚩 (incipit)
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`col` 🚩 (colophon)
-    - [text passages](https://github.com/vedph/cadmus-ndp/blob/master/docs/text-passages.md) (NDP)
+    - [fonts](https://github.com/vedph/cadmus-ndp-books/blob/master/docs/print-fonts-part.md) (BOK): fonts used in print.
+    - [layouts](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-layouts.md):`prn` 🚩 (COD): layouts.
+    - [watermarks](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-watermarks.md) (COD): watermarks.
+    - [figurative plan](https://github.com/vedph/cadmus-ndp-books/blob/master/docs/figurative-plan-part.md) (BOK): figurative plan. 🔗 `person`
+    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`inc` 🚩 incipit transcription.
+    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`col` 🚩 colophon transcription.
+    - [text passages](https://github.com/vedph/cadmus-ndp/blob/master/docs/text-passages.md) (NDP): relevant text passages.
   - _editorial_
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md)
-  - _references_
-    - [references](https://github.com/vedph/cadmus-general/blob/master/docs/doc-references.md)
+    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md): editorial note.
+  - references
+    - [references](https://github.com/vedph/cadmus-general/blob/master/docs/doc-references.md): documental references, mostly used for Zotero bibliography.
 
 - **print instance**
   - _identity_
-    - [metadata](https://github.com/vedph/cadmus-general/blob/master/docs/metadata.md)
-    - [links](https://github.com/vedph/cadmus-general/blob/master/docs/pin-links.md) 🔗 `print edition` (+group)
-    - [shelfmarks](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-shelfmarks.md)
+    - [metadata](https://github.com/vedph/cadmus-general/blob/master/docs/metadata.md): generic metadata.
+    - [links](https://github.com/vedph/cadmus-general/blob/master/docs/pin-links.md): generic links. 🔗 `print edition` (+group)
+    - [shelfmarks](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-shelfmarks.md): shelfmarks code(s).
   - _history_
-    - [historical events](https://github.com/vedph/cadmus-general/blob/master/docs/historical-events.md):`pri` 🚩
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`hist` 🚩 (history)
+    - [historical events](https://github.com/vedph/cadmus-general/blob/master/docs/historical-events.md):`pri` 🚩 historical events for granular history. This requires a specific ontology.
+    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`hist` 🚩 free text about the print's history.
   - _material_
-    - [bindings](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-bindings.md) (COD)
-    - [sheet labels](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-sheet-labels.md) (COD)
-    - [measurements](https://github.com/vedph/cadmus-general/blob/master/docs/physical-measurements.md):`pri` 🚩
-    - [preservation states](https://github.com/vedph/cadmus-general/blob/master/docs/physical-states.md)
+    - [bindings](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-bindings.md) (COD): binding(s).
+    - [sheet labels](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-sheet-labels.md) (COD): labels.
+    - [measurements](https://github.com/vedph/cadmus-general/blob/master/docs/physical-measurements.md):`pri` 🚩 various measurements.
+    - [preservation states](https://github.com/vedph/cadmus-general/blob/master/docs/physical-states.md): material preservation state(s).
   - _content_
-    - [layouts](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-layouts.md):`prn` 🚩 (COD)
-    - [figurative plan implementation](https://github.com/vedph/cadmus-ndp-books/blob/master/docs/figurative-plan-impl-part.md) (BOK) 🔗 `iconography`
-    - [decorations](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-decorations.md) (COD) 🔗 `iconography`, `person`
-    - [edits](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-edits.md) (COD)
-    - [text passages](https://github.com/vedph/cadmus-ndp/blob/master/docs/text-passages.md) (NDP)
+    - [layouts](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-layouts.md):`prn` 🚩 (COD): layouts.
+    - [figurative plan implementation](https://github.com/vedph/cadmus-ndp-books/blob/master/docs/figurative-plan-impl-part.md) (BOK): implementation of figurative plan.
+    - [decorations](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-decorations.md) (COD) decorations. 🔗 `person`. Each decoration element typically links to artist, topic, subject and descriptors, all from a taxonomies store.
+    - [edits](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-edits.md) (COD): text edits after print.
+    - [text passages](https://github.com/vedph/cadmus-ndp/blob/master/docs/text-passages.md) (NDP): relevant text passages.
   - _editorial_
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md)
-  - _references_
-    - [references](https://github.com/vedph/cadmus-general/blob/master/docs/doc-references.md)
+    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md): editorial note.
+  - _references_:
+    - [references](https://github.com/vedph/cadmus-general/blob/master/docs/doc-references.md): documental references, mostly used for Zotero bibliography.
 
 - **drawings project**
   - _identity_
-    - [metadata](https://github.com/vedph/cadmus-general/blob/master/docs/metadata.md)
-    - [links](https://github.com/vedph/cadmus-general/blob/master/docs/pin-links.md) (also for authors) 🔗 `person`
+    - [metadata](https://github.com/vedph/cadmus-general/blob/master/docs/metadata.md): generic metadata.
+    - [links](https://github.com/vedph/cadmus-general/blob/master/docs/pin-links.md): generic links. 🔗 `person`
     - [shelfmarks](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-shelfmarks.md) (COD)
   - _history_
     - [chronotopes](https://github.com/vedph/cadmus-general/blob/master/docs/chronotopes.md)
@@ -152,18 +152,18 @@ The list of facets is given here with their conventional groupings used in the e
     - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`hist` 🚩 (history)
   - _material_
     - [bindings](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-bindings.md):`drp` 🚩 (COD)
-    - [preservation states](https://github.com/vedph/cadmus-general/blob/master/docs/physical-states.md)
+    - [preservation states](https://github.com/vedph/cadmus-general/blob/master/docs/physical-states.md): material preservation state(s).
     - [decorated counts](https://github.com/vedph/cadmus-general/blob/master/docs/decorated-counts.md):`drp` 🚩
   - _content_
     - [comment](https://github.com/vedph/cadmus-general/blob/master/docs/comment.md)
   - _editorial_
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md)
-  - _references_
-    - [references](https://github.com/vedph/cadmus-general/blob/master/docs/doc-references.md)
+    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md): editorial note.
+  - _references_:
+    - [references](https://github.com/vedph/cadmus-general/blob/master/docs/doc-references.md): documental references, mostly used for Zotero bibliography.
 
 - **drawing item**
   - _identity_
-    - [metadata](https://github.com/vedph/cadmus-general/blob/master/docs/metadata.md)
+    - [metadata](https://github.com/vedph/cadmus-general/blob/master/docs/metadata.md): generic metadata.
     - [links](https://github.com/vedph/cadmus-general/blob/master/docs/pin-links.md) (also for authors) 🔗 `drawings project` (+group) 🔗 `person`
     - [shelfmarks](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-shelfmarks.md) (COD)
   - _history_
@@ -173,50 +173,29 @@ The list of facets is given here with their conventional groupings used in the e
   - _material_
     - [drawing tech](https://github.com/vedph/cadmus-ndp-drawings?tab=readme-ov-file#drawingtechpart) (DRW)
     - [watermarks](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-watermarks.md) (COD)
-    - [preservation states](https://github.com/vedph/cadmus-general/blob/master/docs/physical-states.md)
+    - [preservation states](https://github.com/vedph/cadmus-general/blob/master/docs/physical-states.md): material preservation state(s).
   - _content_
-    - [flags](https://github.com/vedph/cadmus-general/blob/master/docs/flags.md):`dri` 🚩
-    - [edits](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-edits.md) (COD)
-    - [iconography instructions](https://github.com/vedph/cadmus-iconography/blob/master/docs/ico-instructions.md) (ICO) 🔗 `iconography`
+    - [flags](https://github.com/vedph/cadmus-general/blob/master/docs/flags.md):`dri` 🚩 boolean drawing features.
+    - [edits](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-edits.md) (COD): edits after the drawing execution.
+    - [iconography instructions](https://github.com/vedph/cadmus-iconography/blob/master/docs/ico-instructions.md) (ICO): instructions to the artist.
   - _editorial_
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md)
-  - _references_
-    - [references](https://github.com/vedph/cadmus-general/blob/master/docs/doc-references.md)
+    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md): editorial note.
+  - _references_:
+    - [references](https://github.com/vedph/cadmus-general/blob/master/docs/doc-references.md): documental references, mostly used for Zotero bibliography.
 
-- **iconography**
+- **person**: we will be using person items only if we need to supply people not found in authority lists and/or we need to tell more about a person.
   - _identity_
-    - [metadata](https://github.com/vedph/cadmus-general/blob/master/docs/metadata.md)
-  - _relations_
-    - [links](https://github.com/vedph/cadmus-general/blob/master/docs/pin-links.md) 🔗 `iconography`
-    - [categories](https://github.com/vedph/cadmus-general/blob/master/docs/categories.md):`ict` 🚩 (iconographic topics = IDP categorie)
-    - [categories](https://github.com/vedph/cadmus-general/blob/master/docs/categories.md):`ics` 🚩 (iconographic subjects = IDP soggetti)
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`isd` 🚩 (subject details = IDP rapporti con la tradizione dantesca)
-    - [categories](https://github.com/vedph/cadmus-general/blob/master/docs/categories.md):`ctx` 🚩 (luoghi danteschi)
-  - _content_
-    - [flags](https://github.com/vedph/cadmus-general/blob/master/docs/flags.md):`ico` 🚩 (storie seconde, altro)
-    - [comment](https://github.com/vedph/cadmus-general/blob/master/docs/comment.md) (description, including keywords)
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`ptx` (paratext)
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`exe` (exegesis)
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`ift` 🚩 (figurative theme = IDP rapporti extradanteschi)
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`msc` 🚩 (miscellaneous = IDP note)
-  - _editorial_
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md)
-  - _references_
-    - [references](https://github.com/vedph/cadmus-general/blob/master/docs/doc-references.md)
-
-- **person**
-  - _identity_
-    - [metadata](https://github.com/vedph/cadmus-general/blob/master/docs/metadata.md)
-    - [names](https://github.com/vedph/cadmus-general/blob/master/docs/names.md)
-    - [categories](https://github.com/vedph/cadmus-general/blob/master/docs/categories.md):`bio` 🚩 (person categories, like poet, cardinal, jurist, miniaturist, etc.)
-    - [links](https://github.com/vedph/cadmus-general/blob/master/docs/pin-links.md)
+    - [metadata](https://github.com/vedph/cadmus-general/blob/master/docs/metadata.md): generic metadata.
+    - [names](https://github.com/vedph/cadmus-general/blob/master/docs/names.md): person name(s).
+    - [categories](https://github.com/vedph/cadmus-general/blob/master/docs/categories.md):`bio` 🚩 person categories, like poet, cardinal, jurist, miniaturist, etc.
+    - [links](https://github.com/vedph/cadmus-general/blob/master/docs/pin-links.md): generic links.
   - _history_
-    - [historical events](https://github.com/vedph/cadmus-general/blob/master/docs/historical-events.md):`bio` 🚩
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`hist` 🚩 (history)
+    - [historical events](https://github.com/vedph/cadmus-general/blob/master/docs/historical-events.md):`bio` 🚩 biographic events. This requires an ontology.
+    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`hist` 🚩 free text about the person's history.
   - _editorial_
-    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md)
-  - _references_
-    - [references](https://github.com/vedph/cadmus-general/blob/master/docs/doc-references.md)
+    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md): editorial note.
+  - _references_:
+    - [references](https://github.com/vedph/cadmus-general/blob/master/docs/doc-references.md): documental references, mostly used for Zotero bibliography.
 
 ### Parts Matrix
 
@@ -239,41 +218,41 @@ As you can see, almost half of the models come from the generic domain, and almo
 
 ![parts distribution](parts.png)
 
-| part                                 | manuscript | fragment | print ed.      | print inst. | drawing prj. | drawing itm.       | iconography | person |
-| ------------------------------------ | ---------- | -------- | -------------- | ----------- | ------------ | ------------------ | ----------- | ------ |
-| bindings (COD)                       | X          |          |                | X           | drp          |                    |             |        |
-| categories                           |            |          |                |             |              |                    | ict ics ctx | bio    |
-| chronotopes                          | X          | X        | prn pub        |             | X            | X                  |             |        |
-| comment                              |            |          |                |             | X            |                    | X           |        |
-| contents (COD)                       | X          | X        |                |             |              |                    |             |        |
-| decorated counts                     |            | X        |                |             | drp          |                    |             |        |
-| decorations (COD)                    | X          | X        | X              | X           |              |                    |             |        |
-| drawing tech (DRW)                   |            |          |                |             |              | X                  |             |        |
-| edits (COD)                          | X          | X        |                | X           |              | X                  |             |        |
-| flags                                |            |          |                |             |              | dri                | ico         |        |
-| figurative plan (BOK)                |            |          | X              |             |              |                    |             |        |
-| figurative plan implementation (BOK) |            |          |                | X           |              |                    |             |        |
-| fonts (BOK)                          |            |          | X              |             |              |                    |             |        |
-| hands (COD)                          | X          | X        |                | X           |              |                    |             |        |
-| historical events                    | ms         | fr       |                | pri         | drp          | dri                |             | bio    |
-| iconography instructions (ICO)       | X          | X        |                |             |              | X                  |             |        |
-| labels (FRA)                         |            | X sig    |                |             |              |                    |             |        |
-| layouts (COD)                        | X          |          | X              | X           |              |                    |             |        |
-| layout (FRA)                         |            | X        |                |             |              |                    |             |        |
-| links                                | X          | X        | X              | X           | X            | X                  | X           | X      |
-| material description (COD)           | X          |          |                |             |              |                    |             |        |
-| measurements                         |            | fr       |                | pri         |              |                    |             |        |
-| metadata                             | X          | X        | X              | X           | X            | X                  | X           | X      |
-| names                                |            |          |                |             |              |                    |             | X      |
-| notable text passages (NDP)          | X          | X        | X              | X           |              |                    |             |        |
-| note                                 | X hist     | X hist   | X hist inc col | X hist      | X hist       | X hist isd ift msc | X exe ptx   | X hist |
-| preservation states                  | X          | X        |                | X           | X            | X                  |             |        |
-| references                           | X          | X        | X              | X           | X            | X                  | X           | X      |
-| rulings (FRA)                        |            | X        |                |             |              |                    |             |        |
-| shelfmarks (COD)                     | X          | X        |                | X           | X            | X                  |             |        |
-| sheet labels (COD)                   | X          |          |                | X           |              |                    |             |        |
-| support (FRA)                        |            | X        |                |             |              |                    |             |        |
-| watermarks (COD)                     | X          |          | X              |             |              | X                  |             |        |
+| part                                 | manuscript | fragment | print ed.      | print inst. | drawing prj. | drawing itm.       | person |
+| ------------------------------------ | ---------- | -------- | -------------- | ----------- | ------------ | ------------------ | ------ |
+| bindings (COD)                       | X          |          |                | X           | drp          |                    |        |
+| categories                           |            |          |                |             |              |                    | bio    |
+| chronotopes                          | X          | X        | prn pub        |             | X            | X                  |        |
+| comment                              |            |          |                |             | X            |                    |        |
+| contents (COD)                       | X          | X        |                |             |              |                    |        |
+| decorated counts                     |            | X        |                |             | drp          |                    |        |
+| decorations (COD)                    | X          | X        | X              | X           |              |                    |        |
+| drawing tech (DRW)                   |            |          |                |             |              | X                  |        |
+| edits (COD)                          | X          | X        |                | X           |              | X                  |        |
+| flags                                |            |          |                |             |              | dri                |        |
+| figurative plan (BOK)                |            |          | X              |             |              |                    |        |
+| figurative plan implementation (BOK) |            |          |                | X           |              |                    |        |
+| fonts (BOK)                          |            |          | X              |             |              |                    |        |
+| hands (COD)                          | X          | X        |                | X           |              |                    |        |
+| historical events                    | ms         | fr       |                | pri         | drp          | dri                | bio    |
+| iconography instructions (ICO)       | X          | X        |                |             |              | X                  |        |
+| labels (FRA)                         |            | X sig    |                |             |              |                    |        |
+| layouts (COD)                        | X          |          | X              | X           |              |                    |        |
+| layout (FRA)                         |            | X        |                |             |              |                    |        |
+| links                                | X          | X        | X              | X           | X            | X                  | X      |
+| material description (COD)           | X          |          |                |             |              |                    |        |
+| measurements                         |            | fr       |                | pri         |              |                    |        |
+| metadata                             | X          | X        | X              | X           | X            | X                  | X      |
+| names                                |            |          |                |             |              |                    | X      |
+| notable text passages (NDP)          | X          | X        | X              | X           |              |                    |        |
+| note                                 | X hist     | X hist   | X hist inc col | X hist      | X hist       | X hist isd ift msc | X hist |
+| preservation states                  | X          | X        |                | X           | X            | X                  |        |
+| references                           | X          | X        | X              | X           | X            | X                  | X      |
+| rulings (FRA)                        |            | X        |                |             |              |                    |        |
+| shelfmarks (COD)                     | X          | X        |                | X           | X            | X                  |        |
+| sheet labels (COD)                   | X          |          |                | X           |              |                    |        |
+| support (FRA)                        |            | X        |                |             |              |                    |        |
+| watermarks (COD)                     | X          |          | X              |             |              | X                  |        |
 
 💡 Notes:
 
@@ -283,16 +262,22 @@ As you can see, almost half of the models come from the generic domain, and almo
 - `note` is a generic note, mostly used for editorial purposes.
 - bibliography is hosted in `references` via Zotero lookup. In this, the `citation` property of each reference (a string) will hold a combination of the Zotero library ID and item ID, uniquely identifying each bibliographic entry.
 
-## Iconographic Connections
+## Iconographic Links
+
+Since version 2, the iconography facet has been removed and everything about it has been outsourced via links to authority lists, whether they are external or internal (taxonomies or items).
+
+For instance, each element of a decoration in the decorations part can have links. These can target:
+
+- the entry of an external authority list (e.g. Biblissima+, MOL, etc.);
+- the entry of an internal taxostore list (e.g. descriptors, subjects, topics and possibly artists if we manage to get our maximum-coverage list);
+- an internal item (e.g. a person, manuscript, print, fragment, drawing, etc.).
+
+As for taxonomies, currently we will define the following:
 
 - **descriptors** ("parole chiave"): to be revised. Suggested syntax is S(A) ("demonio", "veste", "bastone ricurvo"). These should ideally be the minimalist elements of a description in the most objective point of view: the "things" you see in a picture. In a resurrection scene you might see things like rock, sun, plant, shroud. How they are interpreted and connected together (usually with a "story") belongs to an higher abstraction layer, which is much more culturally denoted.
 - **subjects** ("soggetti"): to be revised. Suggested syntax is SVO ("Dante vaga nella selva", "Virgilio cavalca la groppa di Gerione", etc). This is the "story", the higher level of description which usually introduces some action with a subject and a complement, whence the suggested minimalist SVO syntax.
 - **topic** ("macrosoggetti": temi danteschi, e.g. "simoniaci", "spiriti magni").
 
-Plan:
+>Taxonomies in link demo: <https://cadmus-bricks-v3.fusi-soft.com/refs/asserted-composite-id>.
 
-- remove `categories:ict` (topics) and `categories:ics` (subjects);
-- hide `artists` from decorations (will be linked);
-- add taxonomies for descriptors, subjects, topics.
-
-Taxonomies in link demo: <https://cadmus-bricks-v3.fusi-soft.com/refs/asserted-composite-id>.
+Wherever an object contains links, it could contain these links too. This allows encoding this information with a cross-item spectrum.
