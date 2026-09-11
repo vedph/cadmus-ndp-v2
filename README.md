@@ -274,9 +274,12 @@ For instance, each element of a decoration in the decorations part can have link
 
 As for taxonomies, currently we will define the following:
 
-- **descriptors** ("parole chiave"): to be revised. Suggested syntax is S(A) ("demonio", "veste", "bastone ricurvo"). These should ideally be the minimalist elements of a description in the most objective point of view: the "things" you see in a picture. In a resurrection scene you might see things like rock, sun, plant, shroud. How they are interpreted and connected together (usually with a "story") belongs to an higher abstraction layer, which is much more culturally denoted.
-- **subjects** ("soggetti"): to be revised. Suggested syntax is SVO ("Dante vaga nella selva", "Virgilio cavalca la groppa di Gerione", etc). This is the "story", the higher level of description which usually introduces some action with a subject and a complement, whence the suggested minimalist SVO syntax.
-- **topic** ("macrosoggetti": temi danteschi, e.g. "simoniaci", "spiriti magni").
+- **descriptors** (IDP "parole chiave"): to be revised. Suggested syntax is S(A) ("demonio", "veste", "bastone ricurvo"). These should ideally be the minimalist elements of a description in the most objective point of view: the "things" you see in a picture. In a resurrection scene you might see things like rock, sun, plant, shroud. How they are interpreted and connected together (usually with a "story") belongs to the higher abstraction layer of subjects.
+- **subjects** (IDP "soggetti"): subjects are the narrative glue above descriptors, much more culturally denoted. Suggested syntax is SVO ("Dante vaga nella selva", "Virgilio cavalca la groppa di Gerione", etc). This is the "story", the higher level of description which usually introduces some action with a subject and a complement, whence the suggested minimalist SVO syntax (where O is any complement).
+- **topics** (IDP "categorie": temi danteschi, e.g. "uscita dall'inferno", "spiegazione delle macchie lunari", "Dante dormiente"). These describe text passages from a thematic point of view.
+- **toponyms** (luoghi danteschi): these are the names of Commedia places (e.g. "Inferno", "Inferno: selva", "Inferno: Acheronte", "Inferno: I cerchio - Limbo", etc.). This is a closed list.
+
+Additionally, when an object links to a specified text passage (e.g. "If. I 2-3") this is usually represented by citations in a set of document references.
 
 >Taxonomies in link demo: <https://cadmus-bricks-v3.fusi-soft.com/refs/asserted-composite-id>.
 
