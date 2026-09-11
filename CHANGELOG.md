@@ -1,5 +1,6 @@
 # History
 
+- 2026-09-11: added toponyms to mock taxonomies deriving them from thesaurus `categories@ctx`.
 - 2026-09-08:
   - configured TaxoStore with mock taxonomies.
   - ⚠️ removed iconography facet.
