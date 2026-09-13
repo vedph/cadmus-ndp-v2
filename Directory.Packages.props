@@ -4,23 +4,23 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- Unified version for all packages -->
-    <PackageVersion Include="Cadmus.Ndp.Parts" Version="15.0.0" />
-    <PackageVersion Include="Cadmus.Ndp.Parts.Test" Version="15.0.0" />
-    <PackageVersion Include="Cadmus.NdpBooks.Parts" Version="15.0.0" />
-    <PackageVersion Include="Cadmus.NdpBooks.Parts.Test" Version="15.0.0" />
-    <PackageVersion Include="Cadmus.NdpDrawings.Parts" Version="15.0.0" />
-    <PackageVersion Include="Cadmus.NdpDrawings.Parts.Test" Version="15.0.0" />
-    <PackageVersion Include="Cadmus.NdpFrac.Parts" Version="15.0.0" />
-    <PackageVersion Include="Cadmus.NdpFrac.Parts.Test" Version="15.0.0" />
-    <PackageVersion Include="Cadmus.Seed.Ndp.Parts" Version="15.0.0" />
-    <PackageVersion Include="Cadmus.Seed.Ndp.Parts.Test" Version="15.0.0" />
-    <PackageVersion Include="Cadmus.Seed.NdpBooks.Parts" Version="15.0.0" />
-    <PackageVersion Include="Cadmus.Seed.NdpBooks.Parts.Test" Version="15.0.0" />
-    <PackageVersion Include="Cadmus.Seed.NdpDrawings.Parts" Version="15.0.0" />
-    <PackageVersion Include="Cadmus.Seed.NdpDrawings.Parts.Test" Version="15.0.0" />
-    <PackageVersion Include="Cadmus.Seed.NdpFrac.Parts" Version="15.0.0" />
-    <PackageVersion Include="Cadmus.Seed.NdpFrac.Parts.Test" Version="15.0.0" />
-    <PackageVersion Include="CadmusNdpApi" Version="15.0.0" />
+    <PackageVersion Include="Cadmus.Ndp.Parts" Version="16.0.0" />
+    <PackageVersion Include="Cadmus.Ndp.Parts.Test" Version="16.0.0" />
+    <PackageVersion Include="Cadmus.NdpBooks.Parts" Version="16.0.0" />
+    <PackageVersion Include="Cadmus.NdpBooks.Parts.Test" Version="16.0.0" />
+    <PackageVersion Include="Cadmus.NdpDrawings.Parts" Version="16.0.0" />
+    <PackageVersion Include="Cadmus.NdpDrawings.Parts.Test" Version="16.0.0" />
+    <PackageVersion Include="Cadmus.NdpFrac.Parts" Version="16.0.0" />
+    <PackageVersion Include="Cadmus.NdpFrac.Parts.Test" Version="16.0.0" />
+    <PackageVersion Include="Cadmus.Seed.Ndp.Parts" Version="16.0.0" />
+    <PackageVersion Include="Cadmus.Seed.Ndp.Parts.Test" Version="16.0.0" />
+    <PackageVersion Include="Cadmus.Seed.NdpBooks.Parts" Version="16.0.0" />
+    <PackageVersion Include="Cadmus.Seed.NdpBooks.Parts.Test" Version="16.0.0" />
+    <PackageVersion Include="Cadmus.Seed.NdpDrawings.Parts" Version="16.0.0" />
+    <PackageVersion Include="Cadmus.Seed.NdpDrawings.Parts.Test" Version="16.0.0" />
+    <PackageVersion Include="Cadmus.Seed.NdpFrac.Parts" Version="16.0.0" />
+    <PackageVersion Include="Cadmus.Seed.NdpFrac.Parts.Test" Version="16.0.0" />
+    <PackageVersion Include="Cadmus.Ndp.Api" Version="16.0.0" />
     <!-- External dependencies for all packages -->
     <PackageVersion Include="Bogus" Version="35.6.5" />
     <PackageVersion Include="Cadmus.Api.Config" Version="16.0.4" />

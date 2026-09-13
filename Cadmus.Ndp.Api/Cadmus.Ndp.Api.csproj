@@ -25,8 +25,6 @@
 		<PackageReference Include="Cadmus.Seed.Epigraphy.Parts" />
 		<PackageReference Include="Cadmus.Seed.General.Parts" />
 		<PackageReference Include="Cadmus.Seed.Iconography.Parts" />
-		<PackageReference Include="Cadmus.Seed.Ndp.Parts" />
-		<PackageReference Include="Cadmus.Seed.NdpDrawings.Parts" />
 		<PackageReference Include="Cadmus.Seed.Philology.Parts" />
 		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" />
 		<PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" />
@@ -60,7 +58,6 @@
 	</ItemGroup>
 	<ItemGroup Condition="'$(Configuration)'=='Release'">
 		<PackageReference Include="Cadmus.Ndp.Parts" />
-		<PackageReference Include="Cadmus.NdpDrawings.Parts" />
 		<PackageReference Include="Cadmus.NdpBooks.Parts" />
 		<PackageReference Include="Cadmus.NdpDrawings.Parts" />
 		<PackageReference Include="Cadmus.NdpFrac.Parts" />

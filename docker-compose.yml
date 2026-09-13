@@ -43,7 +43,7 @@ services:
 
   # Cadmus ndp API
   cadmus-ndp-api:
-    image: vedph2020/cadmus-ndp-api:2.0.11
+    image: vedph2020/cadmus-ndp-api:16.0.0
     container_name: cadmus-ndp-api
     ports:
       - 5172:8080
