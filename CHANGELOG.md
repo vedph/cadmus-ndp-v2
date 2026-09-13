@@ -1,5 +1,9 @@
 # History
 
+## 16.0.1
+
+- 2026-09-13: updated TaxoStore packages.
+
 ## 16.0.0
 
 - 2026-09-13: fixes to Dockerfile (needed to copy `props` files and add `.nuget.config` to `.dockerignore` to avoid usages of local NuGet repository outside of the local host).

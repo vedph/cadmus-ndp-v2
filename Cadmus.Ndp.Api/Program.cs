@@ -67,7 +67,16 @@ public static class Program
         // previewer
         services.AddSingleton(p => ServiceConfigurator.GetPreviewer(p, config));
 
-        // MUFI
+        // MOL (embedded default data)
+        services.AddMolServices(options =>
+        {
+            options.Provider = MolDatabaseProvider.PostgreSQL;
+            options.ConnectionString = config.GetConnectionString("Mol");
+            Console.WriteLine("MOL connection string: " +
+                options.ConnectionString);
+        });
+
+        // MUFI (from wwwroot/mufi.db)
         services.AddSingleton<IMufiRepository>(_ =>
         {
             string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
@@ -78,7 +87,7 @@ public static class Program
                 });
         });
 
-        // TaxoStore
+        // TaxoStore (from wwwroot/taxo/trees.csv and nodes.csv)
         services.AddTaxoStoreServices(options =>
         {
             string? connectionString = config.GetConnectionString("TaxoStore");
@@ -128,19 +137,10 @@ public static class Program
 
             ServiceConfigurator.ConfigureServices(builder.Services, config,
                 builder.Environment);
+
             ConfigureAppServices(builder.Services, config);
 
             builder.Services.AddOpenApi();
-
-            // add MOL services (repository + auto-initialization)
-            builder.Services.AddMolServices(options =>
-            {
-                options.Provider = MolDatabaseProvider.PostgreSQL;
-                options.ConnectionString = builder.Configuration
-                    .GetConnectionString("Mol");
-                Console.WriteLine("MOL connection string: " +
-                    options.ConnectionString);
-            });
 
             // controllers from libraries
             builder.Services.AddControllers()

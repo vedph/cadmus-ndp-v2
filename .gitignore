@@ -35,5 +35,3 @@ packages/
 !Lib/**/*.dll
 *.scgdat
 *.log
-CadmusNdpApi/wwwroot/mol-log.db
-CadmusNdpApi/wwwroot/mol.db
