@@ -1,5 +1,9 @@
 # History
 
+## 16.0.2
+
+- 2026-09-13: updated TaxoStore packages (added logging).
+
 ## 16.0.1
 
 - 2026-09-13: updated TaxoStore packages.

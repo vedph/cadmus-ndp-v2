@@ -4,23 +4,23 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- Unified version for all packages -->
-    <PackageVersion Include="Cadmus.Ndp.Parts" Version="16.0.1" />
-    <PackageVersion Include="Cadmus.Ndp.Parts.Test" Version="16.0.1" />
-    <PackageVersion Include="Cadmus.NdpBooks.Parts" Version="16.0.1" />
-    <PackageVersion Include="Cadmus.NdpBooks.Parts.Test" Version="16.0.1" />
-    <PackageVersion Include="Cadmus.NdpDrawings.Parts" Version="16.0.1" />
-    <PackageVersion Include="Cadmus.NdpDrawings.Parts.Test" Version="16.0.1" />
-    <PackageVersion Include="Cadmus.NdpFrac.Parts" Version="16.0.1" />
-    <PackageVersion Include="Cadmus.NdpFrac.Parts.Test" Version="16.0.1" />
-    <PackageVersion Include="Cadmus.Seed.Ndp.Parts" Version="16.0.1" />
-    <PackageVersion Include="Cadmus.Seed.Ndp.Parts.Test" Version="16.0.1" />
-    <PackageVersion Include="Cadmus.Seed.NdpBooks.Parts" Version="16.0.1" />
-    <PackageVersion Include="Cadmus.Seed.NdpBooks.Parts.Test" Version="16.0.1" />
-    <PackageVersion Include="Cadmus.Seed.NdpDrawings.Parts" Version="16.0.1" />
-    <PackageVersion Include="Cadmus.Seed.NdpDrawings.Parts.Test" Version="16.0.1" />
-    <PackageVersion Include="Cadmus.Seed.NdpFrac.Parts" Version="16.0.1" />
-    <PackageVersion Include="Cadmus.Seed.NdpFrac.Parts.Test" Version="16.0.1" />
-    <PackageVersion Include="Cadmus.Ndp.Api" Version="16.0.1" />
+    <PackageVersion Include="Cadmus.Ndp.Parts" Version="16.0.2" />
+    <PackageVersion Include="Cadmus.Ndp.Parts.Test" Version="16.0.2" />
+    <PackageVersion Include="Cadmus.NdpBooks.Parts" Version="16.0.2" />
+    <PackageVersion Include="Cadmus.NdpBooks.Parts.Test" Version="16.0.2" />
+    <PackageVersion Include="Cadmus.NdpDrawings.Parts" Version="16.0.2" />
+    <PackageVersion Include="Cadmus.NdpDrawings.Parts.Test" Version="16.0.2" />
+    <PackageVersion Include="Cadmus.NdpFrac.Parts" Version="16.0.2" />
+    <PackageVersion Include="Cadmus.NdpFrac.Parts.Test" Version="16.0.2" />
+    <PackageVersion Include="Cadmus.Seed.Ndp.Parts" Version="16.0.2" />
+    <PackageVersion Include="Cadmus.Seed.Ndp.Parts.Test" Version="16.0.2" />
+    <PackageVersion Include="Cadmus.Seed.NdpBooks.Parts" Version="16.0.2" />
+    <PackageVersion Include="Cadmus.Seed.NdpBooks.Parts.Test" Version="16.0.2" />
+    <PackageVersion Include="Cadmus.Seed.NdpDrawings.Parts" Version="16.0.2" />
+    <PackageVersion Include="Cadmus.Seed.NdpDrawings.Parts.Test" Version="16.0.2" />
+    <PackageVersion Include="Cadmus.Seed.NdpFrac.Parts" Version="16.0.2" />
+    <PackageVersion Include="Cadmus.Seed.NdpFrac.Parts.Test" Version="16.0.2" />
+    <PackageVersion Include="Cadmus.Ndp.Api" Version="16.0.2" />
     <!-- External dependencies for all packages -->
     <PackageVersion Include="Bogus" Version="35.6.5" />
     <PackageVersion Include="Cadmus.Api.Config" Version="16.0.4" />
@@ -115,9 +115,9 @@
     <PackageVersion Include="Spectre.Console.Cli" Version="0.55.0" />
     <PackageVersion Include="SqlKata.Execution" Version="4.0.1" />
     <PackageVersion Include="System.IdentityModel.Tokens.Jwt" Version="8.19.1" />
-    <PackageVersion Include="TaxoStore.Api.Controllers" Version="0.0.6" />
-    <PackageVersion Include="TaxoStore.Core" Version="0.0.6" />
-    <PackageVersion Include="TaxoStore.PgSql" Version="0.0.6" />
+    <PackageVersion Include="TaxoStore.Api.Controllers" Version="0.0.7" />
+    <PackageVersion Include="TaxoStore.Core" Version="0.0.7" />
+    <PackageVersion Include="TaxoStore.PgSql" Version="0.0.7" />
     <PackageVersion Include="xunit" Version="2.9.3" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="4.0.0" />
   </ItemGroup>
