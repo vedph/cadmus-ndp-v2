@@ -25,6 +25,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="Cadmus.Seed" />
+		<PackageReference Include="Microsoft.SourceLink.GitHub" PrivateAssets="All" />
 	</ItemGroup>
 
 	<ItemGroup Condition="'$(Configuration)'=='Debug'">

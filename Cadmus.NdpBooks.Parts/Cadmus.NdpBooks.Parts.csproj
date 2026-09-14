@@ -27,6 +27,7 @@
 		<PackageReference Include="Cadmus.Core" />
 		<PackageReference Include="Cadmus.Mat.Bricks" />
 		<PackageReference Include="Cadmus.Refs.Bricks" />
+		<PackageReference Include="Microsoft.SourceLink.GitHub" PrivateAssets="All" />
 	</ItemGroup>
 
 </Project>

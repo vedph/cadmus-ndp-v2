@@ -31,7 +31,7 @@ These commands build for multiple platforms and push directly to Docker Hub:
 - 🐋 **Cadmus.Ndp.Api**:
 
 ```sh
-docker buildx build --platform linux/amd64,linux/arm64 -t vedph2020/cadmus-ndp-api:16.0.2 -t vedph2020/cadmus-ndp-api:latest --push .
+docker buildx build --platform linux/amd64,linux/arm64 -t vedph2020/cadmus-ndp-api:16.0.3 -t vedph2020/cadmus-ndp-api:latest --push .
 ```
 
 ## Facets
