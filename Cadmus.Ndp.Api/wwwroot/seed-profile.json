@@ -74,7 +74,7 @@
         },
         {
           "typeId": "it.vedph.codicology.material-dsc",
-          "name": "material",
+          "name": "materiality",
           "description": "Material description.",
           "colorKey": "CDB86B",
           "groupKey": "material",
