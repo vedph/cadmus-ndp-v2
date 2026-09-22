@@ -7,6 +7,7 @@
     <File Path="docker-compose.yml" />
     <File Path="Dockerfile" />
     <File Path="getbuildorder.ps1" />
+    <File Path="global.json" />
     <File Path="README.md" />
   </Folder>
   <Project Path="Cadmus.Ndp.Parts.Test/Cadmus.Ndp.Parts.Test.csproj" />
