@@ -1,5 +1,7 @@
 # History
 
+## 16.0.4
+
  - 2026-09-22:
   - updated packages.
   - added codicology location ranges part.
