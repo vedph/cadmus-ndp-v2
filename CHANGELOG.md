@@ -2,6 +2,9 @@
 
  - 2026-09-22:
   - updated packages.
+  - added codicology location ranges part.
+  - added measurements part to mansuscript profile and settings for it (computed proportion and size).
+  - added emblem item.
   - migrated to MTP test platform (<https://learn.microsoft.com/en-us/dotnet/core/testing/migrating-vstest-microsoft-testing-platform>).
 
 ## 16.0.3

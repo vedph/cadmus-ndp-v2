@@ -57,12 +57,21 @@
           "sortKey": "06"
         },
         {
+          "typeId": "it.vedph.physical-measurements",
+          "roleId": "ms",
+          "name": "measurements",
+          "description": "Physical measurements.",
+          "colorKey": "FF9933",
+          "groupKey": "material",
+          "sortKey": "07"
+        },
+        {
           "typeId": "it.vedph.codicology.bindings",
           "name": "bindings",
           "description": "Current and historical bindings.",
           "colorKey": "E6D4A3",
           "groupKey": "material",
-          "sortKey": "07"
+          "sortKey": "08"
         },
         {
           "typeId": "it.vedph.codicology.sheet-labels",
@@ -70,7 +79,7 @@
           "description": "Quires and sheets labels.",
           "colorKey": "DBC785",
           "groupKey": "material",
-          "sortKey": "08"
+          "sortKey": "09"
         },
         {
           "typeId": "it.vedph.codicology.material-dsc",
@@ -78,7 +87,7 @@
           "description": "Material description.",
           "colorKey": "CDB86B",
           "groupKey": "material",
-          "sortKey": "09"
+          "sortKey": "10"
         },
         {
           "typeId": "it.vedph.codicology.watermarks",
@@ -86,7 +95,7 @@
           "description": "Watermarks.",
           "colorKey": "8FD18F",
           "groupKey": "material",
-          "sortKey": "10"
+          "sortKey": "11"
         },
         {
           "typeId": "it.vedph.physical-states",
@@ -94,7 +103,7 @@
           "description": "Physical preservation states.",
           "colorKey": "DBC785",
           "groupKey": "material",
-          "sortKey": "11"
+          "sortKey": "12"
         },
         {
           "typeId": "it.vedph.codicology.contents",
@@ -102,7 +111,7 @@
           "description": "Contents: text.",
           "colorKey": "9CE69C",
           "groupKey": "content",
-          "sortKey": "12"
+          "sortKey": "13"
         },
         {
           "typeId": "it.vedph.codicology.layouts",
@@ -110,7 +119,7 @@
           "description": "Text layouts.",
           "colorKey": "7DD17D",
           "groupKey": "content",
-          "sortKey": "13"
+          "sortKey": "14"
         },
         {
           "typeId": "it.vedph.codicology.decorations",
@@ -118,7 +127,7 @@
           "description": "Decorations.",
           "colorKey": "FFB366",
           "groupKey": "content",
-          "sortKey": "14"
+          "sortKey": "15"
         },
         {
           "typeId": "it.vedph.iconography.instructions",
@@ -126,7 +135,7 @@
           "description": "Iconography instructions.",
           "colorKey": "AFB366",
           "groupKey": "content",
-          "sortKey": "15"
+          "sortKey": "16"
         },
         {
           "typeId": "it.vedph.codicology.hands",
@@ -134,7 +143,7 @@
           "description": "Hands.",
           "colorKey": "66CC66",
           "groupKey": "content",
-          "sortKey": "16"
+          "sortKey": "17"
         },
         {
           "typeId": "it.vedph.codicology.edits",
@@ -142,7 +151,7 @@
           "description": "Supplementary edits on text.",
           "colorKey": "4DB84D",
           "groupKey": "content",
-          "sortKey": "17"
+          "sortKey": "18"
         },
         {
           "typeId": "it.vedph.ndp.text-passages",
@@ -150,7 +159,7 @@
           "description": "List of notable text passages.",
           "colorKey": "5DF94D",
           "groupKey": "content",
-          "sortKey": "18"
+          "sortKey": "19"
         },
         {
           "typeId": "it.vedph.note",
@@ -158,7 +167,7 @@
           "description": "A generic text note.",
           "colorKey": "B0A0F8",
           "groupKey": "editorial",
-          "sortKey": "19"
+          "sortKey": "20"
         },
         {
           "typeId": "it.vedph.doc-references",
@@ -166,7 +175,7 @@
           "description": "Documental references.",
           "colorKey": "BEF0AA",
           "groupKey": "references",
-          "sortKey": "20"
+          "sortKey": "21"
         }
       ]
     },
@@ -930,6 +939,63 @@
           "sortKey": "08"
         }
       ]
+    },
+    {
+      "colorKey": "302050",
+      "description": "Emblem.",
+      "id": "emblem",
+      "label": "emblem",
+      "partDefinitions": [
+        {
+          "typeId": "it.vedph.metadata",
+          "name": "metadata",
+          "description": "Generic metadata.",
+          "colorKey": "B3D9FF",
+          "groupKey": "identity",
+          "sortKey": "01"
+        },
+        {
+          "typeId": "it.vedph.pin-links",
+          "name": "links",
+          "description": "Inner/outer links.",
+          "colorKey": "5CA8FF",
+          "groupKey": "identity",
+          "sortKey": "02"
+        },
+        {
+          "typeId": "it.vedph.codicology.location-ranges",
+          "name": "location ranges",
+          "description": "Location(s) in manuscript.",
+          "colorKey": "E5208E",
+          "groupKey": "content",
+          "sortKey": "03"
+        },
+        {
+          "typeId": "it.vedph.note",
+          "roleId": "dsc",
+          "name": "description",
+          "description": "Emblem's description.",
+          "colorKey": "A856FF",
+          "groupKey": "content",
+          "sortKey": "04"
+        },
+        {
+          "typeId": "it.vedph.note",
+          "name": "note",
+          "description": "A generic text note.",
+          "colorKey": "B0A0F8",
+          "groupKey": "editorial",
+          "sortKey": "05"
+        },
+        {
+          "typeId": "it.vedph.doc-references",
+          "name": "references",
+          "description": "Documental references.",
+          "colorKey": "BEF0AA",
+          "groupKey": "references",
+          "sortKey": "06"
+        }
+      ]
     }
   ],
   "flags": [
@@ -1035,6 +1101,10 @@
         {
           "id": "it.vedph.codicology.layouts",
           "value": "layouts"
+        },
+        {
+          "id": "it.vedph.codicology.location-ranges",
+          "value": "location"
         },
         {
           "id": "it.vedph.codicology.material-dsc",
@@ -1166,6 +1236,10 @@
         },
         {
           "id": "it.vedph.physical-measurements:fr",
+          "value": "measurements"
+        },
+        {
+          "id": "it.vedph.physical-measurements:ms",
           "value": "measurements"
         },
         {
@@ -5832,7 +5906,7 @@
       ]
     },
     {
-      "id": "physical-size-set-names_fr@en",
+      "id": "physical-size-set-names_ms@en",
       "entries": [
         {
           "id": "height",
@@ -5845,8 +5919,12 @@
       ]
     },
     {
+      "id": "physical-size-set-names_fr@en",
+      "targetId": "physical-size-set-names_ms"
+    },
+    {
       "id": "physical-size-set-names_pri@en",
-      "targetId": "physical-size-set-names_fr"
+      "targetId": "physical-size-set-names_ms"
     },
     {
       "id": "physical-size-units@en",
@@ -5864,6 +5942,18 @@
           "value": "mt"
         }
       ]
+    },
+    {
+      "id": "physical-size-units_fr@en",
+      "targetId": "physical-size-units"
+    },
+    {
+      "id": "physical-size-units_ms@en",
+      "targetId": "physical-size-units"
+    },
+    {
+      "id": "physical-size-units_pri@en",
+      "targetId": "physical-size-units"
     },
     {
       "id": "physical-states@en",
@@ -6823,7 +6913,7 @@
   "seed": {
     "options": {
       "seed": 1,
-      "users": ["zeus"],
+      "users": [ "zeus" ],
       "partRoles": [],
       "fragmentRoles": []
     },
@@ -6832,14 +6922,14 @@
         "id": "seed.it.vedph.categories:bio",
         "options": {
           "maxCategoriesPerItem": 1,
-          "categories": ["author", "librarian", "commentator"]
+          "categories": [ "author", "librarian", "commentator" ]
         }
       },
       {
         "id": "seed.it.vedph.categories:ctx",
         "options": {
           "maxCategoriesPerItem": 1,
-          "categories": ["if.selva", "if.porta-ignavi", "if.acheronte"]
+          "categories": [ "if.selva", "if.porta-ignavi", "if.acheronte" ]
         }
       },
       {
@@ -6859,16 +6949,16 @@
       {
         "id": "seed.it.vedph.codicology.bindings",
         "options": {
-          "tags": ["current", "former", "none"],
-          "coverMaterials": ["skin", "parchment", "velvet", "paper"],
-          "boardMaterials": ["wood", "card", "other"]
+          "tags": [ "current", "former", "none" ],
+          "coverMaterials": [ "skin", "parchment", "velvet", "paper" ],
+          "boardMaterials": [ "wood", "card", "other" ]
         }
       },
       {
         "id": "seed.it.vedph.codicology.contents",
         "options": {
-          "annotationTypes": ["rubric", "preface", "dedication"],
-          "contentStates": ["headless", "crippled", "gaps", "excerpts"]
+          "annotationTypes": [ "rubric", "preface", "dedication" ],
+          "contentStates": [ "headless", "crippled", "gaps", "excerpts" ]
         }
       },
       {
@@ -6890,7 +6980,7 @@
             "par.blank",
             "par.sketch"
           ],
-          "colors": ["blue", "red", "green"],
+          "colors": [ "blue", "red", "green" ],
           "elementTypes": [
             "ill",
             "orn",
@@ -6903,7 +6993,7 @@
             "par",
             "wsp"
           ],
-          "elementGildings": ["leaf", "powder"],
+          "elementGildings": [ "leaf", "powder" ],
           "elementPositions": [
             "ill.full-page",
             "ill.interpol",
@@ -6919,7 +7009,7 @@
             "orn.-",
             "par.-"
           ],
-          "elementTechniques": ["watercolor", "gouache", "ink"],
+          "elementTechniques": [ "watercolor", "gouache", "ink" ],
           "elementTypologies": [
             "ill.miniature",
             "ill.drawing",
@@ -6930,55 +7020,58 @@
             "par.run-heads",
             "par.rubrication"
           ],
-          "elementTools": ["pen", "brush"],
-          "artistTypes": ["illuminator", "workshop"]
+          "elementTools": [ "pen", "brush" ],
+          "artistTypes": [ "illuminator", "workshop" ]
         }
       },
       {
         "id": "seed.it.vedph.codicology.edits",
         "options": {
-          "types": ["text", "notes", "comment", "correction"],
-          "techniques": ["ink", "lapis"],
-          "languages": ["en", "fr", "de", "grc", "la"],
-          "colors": ["black", "brown", "gray", "red"]
+          "types": [ "text", "notes", "comment", "correction" ],
+          "techniques": [ "ink", "lapis" ],
+          "languages": [ "en", "fr", "de", "grc", "la" ],
+          "colors": [ "black", "brown", "gray", "red" ]
         }
       },
       {
         "id": "seed.it.vedph.codicology.hands",
         "options": {
-          "signTypes": ["letter", "punct", "abbr", "nex", "ligature"],
-          "scripts": ["got", "sgt", "mic", "mea", "cur", "crh", "ant", "cpb"],
-          "typologies": ["text", "note", "comment", "correction", "attention"],
-          "colors": ["black", "brown", "gray", "red"],
-          "languages": ["en", "fr", "de", "grc", "la"]
+          "signTypes": [ "letter", "punct", "abbr", "nex", "ligature" ],
+          "scripts": [ "got", "sgt", "mic", "mea", "cur", "crh", "ant", "cpb" ],
+          "typologies": [ "text", "note", "comment", "correction", "attention" ],
+          "colors": [ "black", "brown", "gray", "red" ],
+          "languages": [ "en", "fr", "de", "grc", "la" ]
         }
       },
       {
         "id": "seed.it.vedph.codicology.layouts",
         "options": {
-          "rulingTechniques": ["drypoint", "mine", "ink", "folding"]
+          "rulingTechniques": [ "drypoint", "mine", "ink", "folding" ]
         }
+      },
+      {
+        "id": "seed.it.vedph.codicology.location-ranges"
       },
       {
         "id": "seed.it.vedph.codicology.material-dsc",
         "options": {
-          "materials": ["parchment", "paper", "mix"],
-          "states": ["s1", "s2", "s3"]
+          "materials": [ "parchment", "paper", "mix" ],
+          "states": [ "s1", "s2", "s3" ]
         }
       },
       {
         "id": "seed.it.vedph.codicology.sheet-labels",
         "options": {
-          "system": ["arabic", "roman", "mix"],
-          "techniques": ["ink", "lapis", "mechanic"],
-          "positions": ["mse", "msc", "msi", "mie", "mic"],
-          "colors": ["black", "brown", "gray", "red"]
+          "system": [ "arabic", "roman", "mix" ],
+          "techniques": [ "ink", "lapis", "mechanic" ],
+          "positions": [ "mse", "msc", "msi", "mie", "mic" ],
+          "colors": [ "black", "brown", "gray", "red" ]
         }
       },
       {
         "id": "seed.it.vedph.codicology.shelfmarks",
         "options": {
-          "cities": ["Roma"],
+          "cities": [ "Roma" ],
           "libraries": [
             "biblioteca-apostolica-vaticana",
             "biblioteca-nazionale-centrale",
@@ -6992,7 +7085,7 @@
       {
         "id": "seed.it.vedph.comment",
         "options": {
-          "languages": ["en", "it"]
+          "languages": [ "en", "it" ]
         }
       },
       {
@@ -7473,6 +7566,38 @@
     },
     "it.vedph.ndp.text-passages": {
       "citSchemeKey": "dc"
+    },
+    "it.vedph.physical-measurements_ms": {
+      "formulas": {
+        "proportion": {
+          "expression": "$height / $width",
+          "minIntDigits": 1,
+          "maxDecDigits": 2
+        },
+        "size": {
+          "expression": "$height + $width",
+          "intervals": [
+            {
+              "max": 321,
+              "name": "piccolo"
+            },
+            {
+              "min": 322,
+              "max": 490,
+              "name": "medio-piccolo"
+            },
+            {
+              "min": 491,
+              "max": 670,
+              "name": "medio-grande"
+            },
+            {
+              "min": 671,
+              "name": "grande"
+            }
+          ]
+        }
+      }
     },
     "it.vedph.pin-links": {
       "lookupProviderOptions": {

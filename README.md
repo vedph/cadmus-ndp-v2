@@ -104,7 +104,7 @@ The list of facets is given here with their conventional groupings used in the e
     - [metadata](https://github.com/vedph/cadmus-general/blob/master/docs/metadata.md): generic metadata.
     - [links](https://github.com/vedph/cadmus-general/blob/master/docs/pin-links.md) (this can include also authors and editors) 🔗 `person`
   - _history_
-    - [chronotopes](https://github.com/vedph/cadmus-general/blob/master/docs/chronotopes.md):`prn`  🚩 print date and/or place pair(s).
+    - [chronotopes](https://github.com/vedph/cadmus-general/blob/master/docs/chronotopes.md):`prn` 🚩 print date and/or place pair(s).
     - [chronotopes](https://github.com/vedph/cadmus-general/blob/master/docs/chronotopes.md):`pub` 🚩 publication date and/or place pair(s).
   - _content_
     - [fonts](https://github.com/vedph/cadmus-ndp-books/blob/master/docs/print-fonts-part.md) (BOK): fonts used in print.
@@ -199,6 +199,18 @@ The list of facets is given here with their conventional groupings used in the e
   - _references_:
     - [references](https://github.com/vedph/cadmus-general/blob/master/docs/doc-references.md): documental references, mostly used for Zotero bibliography.
 
+- **emblem**: a coat-of-arms found in manuscripts:
+  - _identity_
+    - [metadata](https://github.com/vedph/cadmus-general/blob/master/docs/metadata.md): generic metadata.
+    - [links](https://github.com/vedph/cadmus-general/blob/master/docs/pin-links.md) 🔗 `manuscript`
+  - _content_
+    - [location](https://github.com/vedph/cadmus-codicology/blob/master/docs/cod-location-ranges.md) (COD): location(s) in manuscript.
+    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md):`dsc` 🚩 (description)
+  - _editorial_
+    - [note](https://github.com/vedph/cadmus-general/blob/master/docs/note.md): editorial note.
+  - _references_:
+    - [references](https://github.com/vedph/cadmus-general/blob/master/docs/doc-references.md): documental references, mostly used for Zotero bibliography.
+
 ### Parts Matrix
 
 In this parts matrix you find one column per entity. The cell at the intersection between each column and row contains `X` when the part is present, and/or one ore more role identifiers when that part is used with a specific role (indicated with a suffix after colon in the previous list).
@@ -220,41 +232,42 @@ As you can see, almost half of the models come from the generic domain, and almo
 
 ![parts distribution](parts.png)
 
-| part                                 | manuscript | fragment | print ed.      | print inst. | drawing prj. | drawing itm.       | person |
-| ------------------------------------ | ---------- | -------- | -------------- | ----------- | ------------ | ------------------ | ------ |
-| bindings (COD)                       | X          |          |                | X           | drp          |                    |        |
-| categories                           |            |          |                |             |              |                    | bio    |
-| chronotopes                          | X          | X        | prn pub        |             | X            | X                  |        |
-| comment                              |            |          |                |             | X            |                    |        |
-| contents (COD)                       | X          | X        |                |             |              |                    |        |
-| decorated counts                     |            | X        |                |             | drp          |                    |        |
-| decorations (COD)                    | X          | X        | X              | X           |              |                    |        |
-| drawing tech (DRW)                   |            |          |                |             |              | X                  |        |
-| edits (COD)                          | X          | X        |                | X           |              | X                  |        |
-| flags                                |            |          |                |             |              | dri                |        |
-| figurative plan (BOK)                |            |          | X              |             |              |                    |        |
-| figurative plan implementation (BOK) |            |          |                | X           |              |                    |        |
-| fonts (BOK)                          |            |          | X              |             |              |                    |        |
-| hands (COD)                          | X          | X        |                | X           |              |                    |        |
-| historical events                    | ms         | fr       |                | pri         | drp          | dri                | bio    |
-| iconography instructions (ICO)       | X          | X        |                |             |              | X                  |        |
-| labels (FRA)                         |            | X sig    |                |             |              |                    |        |
-| layouts (COD)                        | X          |          | X              | X           |              |                    |        |
-| layout (FRA)                         |            | X        |                |             |              |                    |        |
-| links                                | X          | X        | X              | X           | X            | X                  | X      |
-| material description (COD)           | X          |          |                |             |              |                    |        |
-| measurements                         |            | fr       |                | pri         |              |                    |        |
-| metadata                             | X          | X        | X              | X           | X            | X                  | X      |
-| names                                |            |          |                |             |              |                    | X      |
-| notable text passages (NDP)          | X          | X        | X              | X           |              |                    |        |
-| note                                 | X hist     | X hist   | X hist inc col | X hist      | X hist       | X hist isd ift msc | X hist |
-| preservation states                  | X          | X        |                | X           | X            | X                  |        |
-| references                           | X          | X        | X              | X           | X            | X                  | X      |
-| rulings (FRA)                        |            | X        |                |             |              |                    |        |
-| shelfmarks (COD)                     | X          | X        |                | X           | X            | X                  |        |
-| sheet labels (COD)                   | X          |          |                | X           |              |                    |        |
-| support (FRA)                        |            | X        |                |             |              |                    |        |
-| watermarks (COD)                     | X          |          | X              |             |              | X                  |        |
+| part                                 | manuscript | fragment | print ed.      | print inst. | drawing prj. | drawing itm.       | person | emblem |
+| ------------------------------------ | ---------- | -------- | -------------- | ----------- | ------------ | ------------------ | ------ | ------ |
+| bindings (COD)                       | X          |          |                | X           | drp          |                    |        |        |
+| categories                           |            |          |                |             |              |                    | bio    |        |
+| chronotopes                          | X          | X        | prn pub        |             | X            | X                  |        |        |
+| comment                              |            |          |                |             | X            |                    |        |        |
+| contents (COD)                       | X          | X        |                |             |              |                    |        |        |
+| decorated counts                     |            | X        |                |             | drp          |                    |        |        |
+| decorations (COD)                    | X          | X        | X              | X           |              |                    |        |        |
+| drawing tech (DRW)                   |            |          |                |             |              | X                  |        |        |
+| edits (COD)                          | X          | X        |                | X           |              | X                  |        |        |
+| flags                                |            |          |                |             |              | dri                |        |        |
+| figurative plan (BOK)                |            |          | X              |             |              |                    |        |        |
+| figurative plan implementation (BOK) |            |          |                | X           |              |                    |        |        |
+| fonts (BOK)                          |            |          | X              |             |              |                    |        |        |
+| hands (COD)                          | X          | X        |                | X           |              |                    |        |        |
+| historical events                    | ms         | fr       |                | pri         | drp          | dri                | bio    |        |
+| iconography instructions (ICO)       | X          | X        |                |             |              | X                  |        |        |
+| labels (FRA)                         |            | X sig    |                |             |              |                    |        |        |
+| layouts (COD)                        | X          |          | X              | X           |              |                    |        |        |
+| layout (FRA)                         |            | X        |                |             |              |                    |        |        |
+| location (DOC)                       |            |          |                |             |              |                    |        | X      |
+| links                                | X          | X        | X              | X           | X            | X                  | X      | X      |
+| material description (COD)           | X          |          |                |             |              |                    |        |        |
+| measurements                         |            | fr       |                | pri         |              |                    |        |        |
+| metadata                             | X          | X        | X              | X           | X            | X                  | X      | X      |
+| names                                |            |          |                |             |              |                    | X      |        |
+| notable text passages (NDP)          | X          | X        | X              | X           |              |                    |        |        |
+| note                                 | X hist     | X hist   | X hist inc col | X hist      | X hist       | X hist isd ift msc | X hist | X dsc  |
+| preservation states                  | X          | X        |                | X           | X            | X                  |        |        |
+| references                           | X          | X        | X              | X           | X            | X                  | X      | X      |
+| rulings (FRA)                        |            | X        |                |             |              |                    |        |        |
+| shelfmarks (COD)                     | X          | X        |                | X           | X            | X                  |        |        |
+| sheet labels (COD)                   | X          |          |                | X           |              |                    |        |        |
+| support (FRA)                        |            | X        |                |             |              |                    |        |        |
+| watermarks (COD)                     | X          |          | X              |             |              | X                  |        |        |
 
 💡 Notes:
 
@@ -283,6 +296,6 @@ As for taxonomies, currently we will define the following:
 
 Additionally, when an object links to a specified text passage (e.g. "If. I 2-3") this is usually represented by citations in a set of document references.
 
->Taxonomies in link demo: <https://cadmus-bricks-v3.fusi-soft.com/refs/asserted-composite-id>.
+> Taxonomies in link demo: <https://cadmus-bricks-v3.fusi-soft.com/refs/asserted-composite-id>.
 
 Wherever an object contains links, it could contain these links too. This allows encoding this information with a cross-item spectrum.
