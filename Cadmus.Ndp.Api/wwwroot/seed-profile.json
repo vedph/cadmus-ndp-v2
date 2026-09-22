@@ -7569,12 +7569,12 @@
     },
     "it.vedph.physical-measurements_ms": {
       "formulas": {
-        "proportion": {
+        "proporzione": {
           "expression": "$height / $width",
           "minIntDigits": 1,
           "maxDecDigits": 2
         },
-        "size": {
+        "taglia": {
           "expression": "$height + $width",
           "intervals": [
             {

@@ -1,5 +1,7 @@
 # History
 
+- 2026-09-22: renamed formulas in settings for measurements.
+
 ## 16.0.4
 
  - 2026-09-22:
