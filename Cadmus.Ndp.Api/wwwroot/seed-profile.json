@@ -4814,7 +4814,24 @@
     },
     {
       "id": "cod-unit-states@en",
-      "targetId": "physical-states"
+      "entries": [
+        {
+          "id": "-",
+          "value": "--"
+        },
+        {
+          "id": "s1",
+          "value": "buono"
+        },
+        {
+          "id": "s2",
+          "value": "discreto"
+        },
+        {
+          "id": "s3",
+          "value": "precario"
+        }
+      ]
     },
     {
       "id": "decorated-count-ids_drp@en",
