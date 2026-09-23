@@ -13,6 +13,8 @@ These repositories are now archived and no longer maintained. Please use this re
 
 The projects were copied into this solution from the above repositories and then their configuration files were updated to use the new unified versioning (starting from 15.0.0) and release management. The code itself was not changed, so it is still the same as in the original repositories. Anyway, new development is done here only.
 
+> Codicological terminology reference: <https://codicologia.irht.cnrs.fr/indexc>.
+
 ## Docker Images
 
 🐋 Before creating Docker images, ensure you have a buildx builder instance running that supports multi-arch:
