@@ -83,7 +83,7 @@
         },
         {
           "typeId": "it.vedph.codicology.material-dsc",
-          "name": "materiality",
+          "name": "support",
           "description": "Material description.",
           "colorKey": "CDB86B",
           "groupKey": "material",
@@ -942,9 +942,9 @@
     },
     {
       "colorKey": "302050",
-      "description": "Emblem.",
-      "id": "emblem",
-      "label": "emblem",
+      "description": "Coat of arms.",
+      "id": "stemma",
+      "label": "stemma",
       "partDefinitions": [
         {
           "typeId": "it.vedph.metadata",
@@ -974,7 +974,7 @@
           "typeId": "it.vedph.note",
           "roleId": "dsc",
           "name": "description",
-          "description": "Emblem's description.",
+          "description": "Coat of arms's description.",
           "colorKey": "A856FF",
           "groupKey": "content",
           "sortKey": "04"
@@ -1108,7 +1108,7 @@
         },
         {
           "id": "it.vedph.codicology.material-dsc",
-          "value": "material"
+          "value": "support"
         },
         {
           "id": "it.vedph.codicology.shelfmarks",

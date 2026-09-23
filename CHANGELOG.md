@@ -1,5 +1,6 @@
 # History
 
+- 2026-09-23: in profile, renamed material to support and emblem to stemma.
 - 2026-09-22: renamed formulas in settings for measurements.
 
 ## 16.0.4

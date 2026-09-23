@@ -199,7 +199,7 @@ The list of facets is given here with their conventional groupings used in the e
   - _references_:
     - [references](https://github.com/vedph/cadmus-general/blob/master/docs/doc-references.md): documental references, mostly used for Zotero bibliography.
 
-- **emblem**: a coat-of-arms found in manuscripts:
+- **stemma**: a coat-of-arms found in manuscripts:
   - _identity_
     - [metadata](https://github.com/vedph/cadmus-general/blob/master/docs/metadata.md): generic metadata.
     - [links](https://github.com/vedph/cadmus-general/blob/master/docs/pin-links.md) 🔗 `manuscript`
@@ -232,7 +232,7 @@ As you can see, almost half of the models come from the generic domain, and almo
 
 ![parts distribution](parts.png)
 
-| part                                 | manuscript | fragment | print ed.      | print inst. | drawing prj. | drawing itm.       | person | emblem |
+| part                                 | manuscript | fragment | print ed.      | print inst. | drawing prj. | drawing itm.       | person | stemma |
 | ------------------------------------ | ---------- | -------- | -------------- | ----------- | ------------ | ------------------ | ------ | ------ |
 | bindings (COD)                       | X          |          |                | X           | drp          |                    |        |        |
 | categories                           |            |          |                |             |              |                    | bio    |        |
