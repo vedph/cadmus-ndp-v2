@@ -1,5 +1,6 @@
 # History
 
+- 2026-09-25: updated packages (added import/export to API).
 - 2026-09-23: in profile, renamed material to support and emblem to stemma.
 - 2026-09-22: renamed formulas in settings for measurements.
 
