@@ -17,7 +17,7 @@ The projects were copied into this solution from the above repositories and then
 
 ## Docker Images
 
-🐋 Before creating Docker images, ensure you have a buildx builder instance running that supports multi-arch:
+🐋 Before creating Docker images, ensure you have a buildx builder instance running that supports multi-arch and that you have run `buildnpub.ps1` publishing NuGet packages:
 
 ```sh
 docker buildx create --use --name multi-arch-builder || docker buildx use multi-arch-builder
@@ -33,7 +33,7 @@ These commands build for multiple platforms and push directly to Docker Hub:
 - 🐋 **Cadmus.Ndp.Api**:
 
 ```sh
-docker buildx build --platform linux/amd64,linux/arm64 -t vedph2020/cadmus-ndp-api:16.0.4 -t vedph2020/cadmus-ndp-api:latest --push .
+docker buildx build --platform linux/amd64,linux/arm64 -t vedph2020/cadmus-ndp-api:16.0.5 -t vedph2020/cadmus-ndp-api:latest --push .
 ```
 
 ## Facets
