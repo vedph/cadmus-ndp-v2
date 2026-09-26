@@ -1,5 +1,7 @@
 # History
 
+- 2026-09-26: updated thesauri: `cod-content-annotation-types`, `cod-edit-types`.
+
 ## 16.0.5
 
 - 2026-09-25: updated packages (added import/export to API).

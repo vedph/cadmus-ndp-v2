@@ -2121,6 +2121,10 @@
           "value": "---"
         },
         {
+          "id": "comment",
+          "value": "commento"
+        },
+        {
           "id": "rubric",
           "value": "rubrica"
         },
@@ -2998,32 +3002,12 @@
       "id": "cod-edit-types@en",
       "entries": [
         {
-          "id": "text",
-          "value": "testo avventizio"
-        },
-        {
           "id": "notes",
-          "value": "postilla/annotazione"
-        },
-        {
-          "id": "comment",
-          "value": "commento"
+          "value": "postilla"
         },
         {
           "id": "correction",
           "value": "correzione"
-        },
-        {
-          "id": "integration",
-          "value": "integrazione"
-        },
-        {
-          "id": "rubric",
-          "value": "rubrica"
-        },
-        {
-          "id": "para",
-          "value": "segno paragrafematico"
         },
         {
           "id": "title",
@@ -3036,10 +3020,6 @@
         {
           "id": "ownership",
           "value": "nota di possesso"
-        },
-        {
-          "id": "index",
-          "value": "indice"
         },
         {
           "id": "drawing",
