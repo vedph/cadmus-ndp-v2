@@ -36,6 +36,11 @@ These commands build for multiple platforms and push directly to Docker Hub:
 docker buildx build --platform linux/amd64,linux/arm64 -t vedph2020/cadmus-ndp-api:16.0.6 -t vedph2020/cadmus-ndp-api:latest --push .
 ```
 
+> When there is no available ARM image, add `platform: linux/amd64` as a sibling of the `image` line in docker compose script to force Docker to pull and run the x64 image under emulation, e.g.:
+
+- add `platform: linux/arm64` to MongoDB and PostgreSQL. Note that some images (especially for PostgreSQL) are not available for ARM, so you may need to add `platform: linux/amd64` to them too or downgrade to a version which supports ARM (e.g. `image: postgres:16`).
+- add `platform: linux/amd64` to API and app.
+
 ## Facets
 
 The list of facets is given here with their conventional groupings used in the editor UI. The 3-letters abbreviation after each part type name refers to Cadmus model spaces different from the generic one. Here we have `COD`=codicology, `FRA`=fragments, `BOK`=books, `DRW`=drawings, `ICO`=iconography. Also, 🔗 means a potential _internal_ link; where there is a links part without this indication, the usual implication is that it contains _external_ links.

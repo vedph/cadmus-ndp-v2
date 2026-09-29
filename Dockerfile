@@ -1,31 +1,30 @@
-# Stage 1: base (uses the target platform architecture for the runtime)
+# Stage 1: base (uses target platform architecture for ASP.NET runtime)
 FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS base
 WORKDIR /app
 EXPOSE 8080
 EXPOSE 443
 
-# Stage 2: build (SDK runs natively on the host platform)
+# Stage 2: build/publish (SDK runs natively on host platform for speed)
 FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 ARG TARGETARCH
 ARG TARGETOS
+
 WORKDIR /src
 
-COPY ["Directory.Packages.props", "Directory.Build.props", "./"]
-COPY ["Cadmus.Ndp.Api/Cadmus.Ndp.Api.csproj", "Cadmus.Ndp.Api/"]
-# Pass the architecture to restore the correct RID-specific packages
-RUN dotnet restore "Cadmus.Ndp.Api/Cadmus.Ndp.Api.csproj" -a $TARGETARCH -s https://api.nuget.org/v3/index.json --verbosity n
-
+# Copy project files and source
 COPY . .
-# Compile specifically for the target OS and Architecture
-RUN dotnet build "Cadmus.Ndp.Api/Cadmus.Ndp.Api.csproj" -c Release -a $TARGETARCH -o /app/build
 
-# Stage 3: publish
-FROM build AS publish
-ARG TARGETARCH
-RUN dotnet publish "Cadmus.Ndp.Api/Cadmus.Ndp.Api.csproj" -c Release -a $TARGETARCH -o /app/publish
+# Use bash to map amd64 -> x64 and build for the target RID cleanly
+RUN /bin/bash -c '\
+    RID_ARCH="${TARGETARCH/amd64/x64}" && \
+    dotnet publish "Cadmus.Ndp.Api/Cadmus.Ndp.Api.csproj" \
+    -c Release \
+    -r "${TARGETOS:-linux}-${RID_ARCH}" \
+    --no-self-contained \
+    -o /app/publish'
 
-# Stage 4: final
+# Stage 3: final image
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app/publish .
+COPY --from=build /app/publish .
 ENTRYPOINT ["dotnet", "Cadmus.Ndp.Api.dll"]

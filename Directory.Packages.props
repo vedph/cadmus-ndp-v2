@@ -46,7 +46,7 @@
     <PackageVersion Include="Cadmus.Seed.Philology.Parts" Version="16.0.7" />
     <PackageVersion Include="Cadmus.Seed.TaxoStore.Parts" Version="0.0.5" />
     <PackageVersion Include="Cadmus.TaxoStore.Parts" Version="0.0.5" />
-    <PackageVersion Include="coverlet.collector" Version="10.0.1" />
+    <PackageVersion Include="coverlet.collector" Version="10.1.0" />
     <PackageVersion Include="CsvHelper" Version="33.1.0" />
     <PackageVersion Include="DiffMatchPatch" Version="5.0.0" />
     <PackageVersion Include="EFCore.NamingConventions" Version="10.0.1" />
