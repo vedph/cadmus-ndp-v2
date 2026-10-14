@@ -1,6 +1,8 @@
 # History
 
-- 2026-10-14: updated packages.
+- 2026-10-14:
+  - updated packages.
+  - added settings for codicology contents part editor.
 - 2026-10-03: updated packages.
 - 2026-09-29: refactored Dockerfile to support also MacOS ARM: the test image was created as `vedph2020/cadmus-ndp-api:16.0.6-rev1`.
 - 2026-09-27: updated packages.
