@@ -1265,6 +1265,95 @@
       ]
     },
     {
+      "id": "asserted-id-tags@en",
+      "entries": [
+        {
+          "id": "author",
+          "value": "autore"
+        },
+        {
+          "id": "librarian",
+          "value": "bibliotecario"
+        },
+        {
+          "id": "commentator",
+          "value": "commentatore"
+        },
+        {
+          "id": "commissioner",
+          "value": "committente"
+        },
+        {
+          "id": "composer",
+          "value": "compositore"
+        },
+        {
+          "id": "copyist",
+          "value": "copista"
+        },
+        {
+          "id": "recipient",
+          "value": "destinatario"
+        },
+        {
+          "id": "epitomizer",
+          "value": "epitomatore"
+        },
+        {
+          "id": "glossator",
+          "value": "glossatore"
+        },
+        {
+          "id": "illustrator",
+          "value": "illustratore"
+        },
+        {
+          "id": "bookbinder",
+          "value": "legatore"
+        },
+        {
+          "id": "reader",
+          "value": "lettore"
+        },
+        {
+          "id": "bookseller",
+          "value": "libraio"
+        },
+        {
+          "id": "notary",
+          "value": "notaio"
+        },
+        {
+          "id": "collector",
+          "value": "raccoglitore"
+        },
+        {
+          "id": "restorer",
+          "value": "restauratore"
+        },
+        {
+          "id": "translator",
+          "value": "traduttore"
+        },
+        {
+          "id": "transliterator",
+          "value": "translitteratore"
+        },
+        {
+          "id": "vernaculariser",
+          "value": "volgarizzatore"
+        },
+        {
+          "id": "dedicatee",
+          "value": "dedicatario"
+        },
+        {
+          "id": "owner",
+          "value": "possessore"
+        }
+      ]
+    },
+    {
       "id": "categories_bio@en",
       "entries": [
         {

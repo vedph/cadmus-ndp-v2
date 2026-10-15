@@ -115,9 +115,9 @@
     <PackageVersion Include="Spectre.Console.Cli" Version="0.55.0" />
     <PackageVersion Include="SqlKata.Execution" Version="4.0.1" />
     <PackageVersion Include="System.IdentityModel.Tokens.Jwt" Version="8.19.1" />
-    <PackageVersion Include="TaxoStore.Api.Controllers" Version="1.0.0" />
-    <PackageVersion Include="TaxoStore.Core" Version="1.0.0" />
-    <PackageVersion Include="TaxoStore.PgSql" Version="1.0.0" />
+    <PackageVersion Include="TaxoStore.Api.Controllers" Version="1.1.0" />
+    <PackageVersion Include="TaxoStore.Core" Version="1.1.0" />
+    <PackageVersion Include="TaxoStore.PgSql" Version="1.1.0" />
     <PackageVersion Include="xunit.v3" Version="4.0.2" />
   </ItemGroup>
 </Project>

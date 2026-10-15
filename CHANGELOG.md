@@ -1,5 +1,9 @@
 # History
 
+- 2026-10-15:
+  - updated packages.
+  - added thesaurus `asserted-id-tags`. Currently this is unique, but we can possibly have variants and configure them in settings according to the context.
+  - updated taxonomies CSV.
 - 2026-10-14:
   - updated packages.
   - added settings for codicology contents part editor.

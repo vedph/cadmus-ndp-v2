@@ -1,5 +1,7 @@
-id,name,note
-topics,topics,"Comedia topics"
-subjects,subjects,"Iconographic subjects in narrative form (SVO)"
-descriptors,descriptors,"Iconographic atomic descriptors (S(A))"
-toponyms,toponyms,"Comedia places"
+id,name,note,flat
+topics,topics,"Comedia topics",false
+subjects,subjects,"Iconographic subjects in narrative form (SVO)",true
+descriptors,descriptors,"Iconographic atomic descriptors (S(A))",true
+toponyms,toponyms,"Comedia places",false
+persons,persons,"Persons",true
+organizations,organizations,"Organizations",true
