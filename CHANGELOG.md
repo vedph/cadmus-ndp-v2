@@ -1,5 +1,6 @@
 # History
 
+- 2026-10-16: updated packages.
 - 2026-10-15:
   - updated packages.
   - added thesaurus `asserted-id-tags`. Currently this is unique, but we can possibly have variants and configure them in settings according to the context.
