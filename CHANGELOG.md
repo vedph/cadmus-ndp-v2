@@ -1,5 +1,8 @@
 # History
 
+- 2026-10-18:
+  - updated packages.
+  - fixed sample taxonomy.
 - 2026-10-16:
   - updated packages.
   - removed flags from sample `nodes.csv`.
