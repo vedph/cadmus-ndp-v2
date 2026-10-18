@@ -1,8 +1,11 @@
 # History
 
+## 16.0.7
+
 - 2026-10-18:
   - updated packages.
   - fixed sample taxonomy.
+  - updated API startup code with proper rate limiting configuration.
 - 2026-10-16:
   - updated packages.
   - removed flags from sample `nodes.csv`.

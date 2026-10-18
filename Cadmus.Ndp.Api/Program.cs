@@ -8,7 +8,6 @@ using Cadmus.Core.Config;
 using Cadmus.Ndp.Api.Services;
 using Cadmus.Seed;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -154,12 +153,13 @@ public static class Program
 
             WebApplication app = builder.Build();
 
-            // forward headers for use with an eventual reverse proxy
-            app.UseForwardedHeaders(new ForwardedHeadersOptions
-            {
-                ForwardedHeaders = ForwardedHeaders.XForwardedFor
-                    | ForwardedHeaders.XForwardedProto
-            });
+            // https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/proxy-load-balancer
+            // this must come first, so that the client IP address (used by
+            // the rate limiter) and the original scheme (https) are restored
+            // before anything (e.g. OpenAPI servers URL) uses them.
+            // Only localhost is trusted by default: when behind a reverse
+            // proxy, list it in ForwardedHeaders:KnownProxies/KnownNetworks
+            ServiceConfigurator.UseForwardedHeaders(app, config);
 
             // development or production
             if (builder.Environment.IsDevelopment())
@@ -194,11 +194,11 @@ public static class Program
 
             // CORS
             app.UseCors("CorsPolicy");
-            // rate limiter
-            if (!config.GetValue<bool>("RateLimit:IsDisabled"))
-                app.UseRateLimiter();
             // authentication
             app.UseAuthentication();
+            // rate limiter (unless RateLimit:IsDisabled): after authentication,
+            // so that its partition key can be the authenticated user name
+            ServiceConfigurator.UseRateLimiter(app, config);
             app.UseAuthorization();
             // proxy
             app.UseResponseCaching();

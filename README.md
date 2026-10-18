@@ -33,7 +33,7 @@ These commands build for multiple platforms and push directly to Docker Hub:
 - 🐋 **Cadmus.Ndp.Api**:
 
 ```sh
-docker buildx build --platform linux/amd64,linux/arm64 -t vedph2020/cadmus-ndp-api:16.0.6 -t vedph2020/cadmus-ndp-api:latest --push .
+docker buildx build --platform linux/amd64,linux/arm64 -t vedph2020/cadmus-ndp-api:16.0.7 -t vedph2020/cadmus-ndp-api:latest --push .
 ```
 
 > When there is no available ARM image, add `platform: linux/amd64` as a sibling of the `image` line in docker compose script to force Docker to pull and run the x64 image under emulation, e.g.:
