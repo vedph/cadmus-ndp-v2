@@ -1,6 +1,8 @@
 # History
 
-- 2026-10-23: updated packages.
+## 16.0.8
+
+- 2026-10-23: updated packages (authorization revision).
 
 ## 16.0.7
 
