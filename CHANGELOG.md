@@ -1,5 +1,7 @@
 # History
 
+- 2026-11-06: updated packages (v17).
+
 ## 16.0.9
 
 - 2026-11-02: updated packages.
