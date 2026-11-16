@@ -1,5 +1,7 @@
 # History
 
+- 2026-11-16: updated thesaurus `cod-decoration-type-hidden`.
+
 ## 18.0.0
 
 - 2026-11-14: ⚠️ upgraded to .NET 11.

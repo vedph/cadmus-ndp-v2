@@ -2977,23 +2977,23 @@
         },
         {
           "id": "orn",
-          "value": "subject textRelation lineHeight"
+          "value": "subject lineHeight"
         },
         {
           "id": "ant",
-          "value": "subject textRelation lineHeight"
+          "value": "subject lineHeight"
         },
         {
           "id": "ini",
-          "value": "typologies subject textRelation"
+          "value": "typologies subject"
         },
         {
           "id": "ini-wat",
-          "value": "subject textRelation"
+          "value": "subject"
         },
         {
           "id": "ini-orn",
-          "value": "textRelation"
+          "value": ""
         },
         {
           "id": "ini-fig",
@@ -3001,15 +3001,15 @@
         },
         {
           "id": "par",
-          "value": "subject textRelation lineHeight"
+          "value": "subject lineHeight"
         },
         {
           "id": "lbl",
-          "value": "subject textRelation"
+          "value": "subject"
         },
         {
           "id": "wsp",
-          "value": "colors gildings techniques subject textRelation tools lineHeight"
+          "value": "colors gildings techniques subject tools lineHeight"
         }
       ]
     },
