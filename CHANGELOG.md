@@ -1,5 +1,8 @@
 # History
 
+## 18.1.0
+
+- 2026-11-23: updated packages (history editor support).
 - 2026-11-16: updated thesaurus `cod-decoration-type-hidden`.
 
 ## 18.0.0

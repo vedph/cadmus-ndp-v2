@@ -4,46 +4,46 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- Unified version for all packages -->
-    <PackageVersion Include="Cadmus.Ndp.Parts" Version="18.0.0" />
-    <PackageVersion Include="Cadmus.Ndp.Parts.Test" Version="18.0.0" />
-    <PackageVersion Include="Cadmus.NdpBooks.Parts" Version="18.0.0" />
-    <PackageVersion Include="Cadmus.NdpBooks.Parts.Test" Version="18.0.0" />
-    <PackageVersion Include="Cadmus.NdpDrawings.Parts" Version="18.0.0" />
-    <PackageVersion Include="Cadmus.NdpDrawings.Parts.Test" Version="18.0.0" />
-    <PackageVersion Include="Cadmus.NdpFrac.Parts" Version="18.0.0" />
-    <PackageVersion Include="Cadmus.NdpFrac.Parts.Test" Version="18.0.0" />
-    <PackageVersion Include="Cadmus.Seed.Ndp.Parts" Version="18.0.0" />
-    <PackageVersion Include="Cadmus.Seed.Ndp.Parts.Test" Version="18.0.0" />
-    <PackageVersion Include="Cadmus.Seed.NdpBooks.Parts" Version="18.0.0" />
-    <PackageVersion Include="Cadmus.Seed.NdpBooks.Parts.Test" Version="18.0.0" />
-    <PackageVersion Include="Cadmus.Seed.NdpDrawings.Parts" Version="18.0.0" />
-    <PackageVersion Include="Cadmus.Seed.NdpDrawings.Parts.Test" Version="18.0.0" />
-    <PackageVersion Include="Cadmus.Seed.NdpFrac.Parts" Version="18.0.0" />
-    <PackageVersion Include="Cadmus.Seed.NdpFrac.Parts.Test" Version="18.0.0" />
-    <PackageVersion Include="Cadmus.Ndp.Api" Version="18.0.0" />
+    <PackageVersion Include="Cadmus.Ndp.Parts" Version="18.1.0" />
+    <PackageVersion Include="Cadmus.Ndp.Parts.Test" Version="18.1.0" />
+    <PackageVersion Include="Cadmus.NdpBooks.Parts" Version="18.1.0" />
+    <PackageVersion Include="Cadmus.NdpBooks.Parts.Test" Version="18.1.0" />
+    <PackageVersion Include="Cadmus.NdpDrawings.Parts" Version="18.1.0" />
+    <PackageVersion Include="Cadmus.NdpDrawings.Parts.Test" Version="18.1.0" />
+    <PackageVersion Include="Cadmus.NdpFrac.Parts" Version="18.1.0" />
+    <PackageVersion Include="Cadmus.NdpFrac.Parts.Test" Version="18.1.0" />
+    <PackageVersion Include="Cadmus.Seed.Ndp.Parts" Version="18.1.0" />
+    <PackageVersion Include="Cadmus.Seed.Ndp.Parts.Test" Version="18.1.0" />
+    <PackageVersion Include="Cadmus.Seed.NdpBooks.Parts" Version="18.1.0" />
+    <PackageVersion Include="Cadmus.Seed.NdpBooks.Parts.Test" Version="18.1.0" />
+    <PackageVersion Include="Cadmus.Seed.NdpDrawings.Parts" Version="18.1.0" />
+    <PackageVersion Include="Cadmus.Seed.NdpDrawings.Parts.Test" Version="18.1.0" />
+    <PackageVersion Include="Cadmus.Seed.NdpFrac.Parts" Version="18.1.0" />
+    <PackageVersion Include="Cadmus.Seed.NdpFrac.Parts.Test" Version="18.1.0" />
+    <PackageVersion Include="Cadmus.Ndp.Api" Version="18.1.0" />
     <!-- External dependencies for all packages -->
     <PackageVersion Include="Bogus" Version="35.6.5" />
-    <PackageVersion Include="Cadmus.Api.Config" Version="18.0.0" />
-    <PackageVersion Include="Cadmus.Api.Controllers" Version="18.0.0" />
-    <PackageVersion Include="Cadmus.Api.Controllers.Export" Version="18.0.0" />
-    <PackageVersion Include="Cadmus.Api.Controllers.Import" Version="18.0.0" />
-    <PackageVersion Include="Cadmus.Api.Models" Version="18.0.0" />
-    <PackageVersion Include="Cadmus.Api.Services" Version="18.0.0" />
+    <PackageVersion Include="Cadmus.Api.Config" Version="18.1.0" />
+    <PackageVersion Include="Cadmus.Api.Controllers" Version="18.1.0" />
+    <PackageVersion Include="Cadmus.Api.Controllers.Export" Version="18.1.0" />
+    <PackageVersion Include="Cadmus.Api.Controllers.Import" Version="18.1.0" />
+    <PackageVersion Include="Cadmus.Api.Models" Version="18.1.0" />
+    <PackageVersion Include="Cadmus.Api.Services" Version="18.1.0" />
     <PackageVersion Include="Cadmus.Codicology.Graph" Version="9.0.5" />
     <PackageVersion Include="Cadmus.Codicology.Parts" Version="10.0.0" />
-    <PackageVersion Include="Cadmus.Core" Version="18.0.0" />
-    <PackageVersion Include="Cadmus.Graph.Extras" Version="18.0.0" />
+    <PackageVersion Include="Cadmus.Core" Version="18.1.0" />
+    <PackageVersion Include="Cadmus.Graph.Extras" Version="18.1.0" />
     <PackageVersion Include="Cadmus.Iconography.Parts" Version="2.0.0" />
     <PackageVersion Include="Cadmus.Iconography.Services" Version="2.0.0" />
-    <PackageVersion Include="Cadmus.Mat.Bricks" Version="18.0.0" />
-    <PackageVersion Include="Cadmus.Refs.Bricks" Version="18.0.0" />
+    <PackageVersion Include="Cadmus.Mat.Bricks" Version="18.1.0" />
+    <PackageVersion Include="Cadmus.Refs.Bricks" Version="18.1.0" />
     <PackageVersion Include="Cadmus.Epigraphy.Parts" Version="10.0.0" />
-    <PackageVersion Include="Cadmus.Seed" Version="18.0.0" />
+    <PackageVersion Include="Cadmus.Seed" Version="18.1.0" />
     <PackageVersion Include="Cadmus.Seed.Codicology.Parts" Version="10.0.0" />
     <PackageVersion Include="Cadmus.Seed.Epigraphy.Parts" Version="10.0.0" />
-    <PackageVersion Include="Cadmus.Seed.General.Parts" Version="18.0.0" />
+    <PackageVersion Include="Cadmus.Seed.General.Parts" Version="18.1.0" />
     <PackageVersion Include="Cadmus.Seed.Iconography.Parts" Version="2.0.0" />
-    <PackageVersion Include="Cadmus.Seed.Philology.Parts" Version="18.0.0" />
+    <PackageVersion Include="Cadmus.Seed.Philology.Parts" Version="18.1.0" />
     <PackageVersion Include="Cadmus.Seed.TaxoStore.Parts" Version="0.0.5" />
     <PackageVersion Include="Cadmus.TaxoStore.Parts" Version="0.0.5" />
     <PackageVersion Include="coverlet.collector" Version="10.1.1" />
@@ -102,11 +102,11 @@
     <PackageVersion Include="Proteus.Core" Version="13.0.3" />
     <PackageVersion Include="Proteus.Entries" Version="13.0.3" />
     <PackageVersion Include="Proteus.Text.Xml" Version="13.0.3" />
-    <PackageVersion Include="Scalar.AspNetCore" Version="2.21.0" />
+    <PackageVersion Include="Scalar.AspNetCore" Version="3.2.0" />
     <PackageVersion Include="Serilog" Version="4.4.0" />
-    <PackageVersion Include="Serilog.AspNetCore" Version="10.0.0" />
+    <PackageVersion Include="Serilog.AspNetCore" Version="11.0.0" />
     <PackageVersion Include="Serilog.Exceptions" Version="8.4.0" />
-    <PackageVersion Include="Serilog.Extensions.Hosting" Version="10.0.0" />
+    <PackageVersion Include="Serilog.Extensions.Hosting" Version="11.0.0" />
     <PackageVersion Include="Serilog.Extensions.Logging" Version="10.0.0" />
     <PackageVersion Include="Serilog.Sinks.Console" Version="6.1.1" />
     <PackageVersion Include="Serilog.Sinks.File" Version="7.0.0" />
